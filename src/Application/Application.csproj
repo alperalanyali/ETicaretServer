@@ -1,0 +1,148 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Features\" />
+    <None Remove="MediatR" />
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Features\AppEntities\" />
+    <None Remove="Features\AppEntities\AppUserFeatures\Commands\" />
+    <None Remove="Features\AppEntities\AppUserFeatures\Queries\" />
+    <None Remove="Features\AppEntities\AppUserFeatures\Commands\CreateUser\" />
+    <None Remove="Services\" />
+    <None Remove="Features\AppEntities\AuthFeatures\Queries\GetUserById\" />
+    <None Remove="Features\AppEntities\AuthFeatures\Commands\Login\" />
+    <None Remove="Features\AppEntities\CategoryFeatures\" />
+    <None Remove="Features\AppEntities\CategoryFeatures\Commands\" />
+    <None Remove="Features\AppEntities\CategoryFeatures\Queries\" />
+    <None Remove="Features\AppEntities\CategoryFeatures\Commands\CreateCategory\" />
+    <None Remove="Features\AppEntities\CategoryFeatures\Commands\UpdateCategory\" />
+    <None Remove="Features\AppEntities\CategoryFeatures\Commands\DeleteCategory\" />
+    <None Remove="Features\AppEntities\CategoryFeatures\Queries\GetAll\" />
+    <None Remove="Features\AppEntities\BasketFeatures\" />
+    <None Remove="Features\AppEntities\BasketFeatures\Commands\" />
+    <None Remove="Features\AppEntities\BasketFeatures\Queries\" />
+    <None Remove="Features\AppEntities\BasketFeatures\Commands\CreateBasket\" />
+    <None Remove="Features\AppEntities\BasketFeatures\Commands\UpdateBasket\" />
+    <None Remove="Features\AppEntities\BasketFeatures\Commands\DeleteBasket\" />
+    <None Remove="Features\AppEntities\BasketItemFeatures\" />
+    <None Remove="Features\AppEntities\BasketItemFeatures\Commands\" />
+    <None Remove="Features\AppEntities\BasketItemFeatures\Queries\" />
+    <None Remove="Features\AppEntities\BasketItemFeatures\Commands\CreateBasketItem\" />
+    <None Remove="Features\AppEntities\BasketItemFeatures\Commands\UpdateBasketItem\" />
+    <None Remove="Features\AppEntities\BasketItemFeatures\Commands\DeleteBasketItem\" />
+    <None Remove="Features\AppEntities\BasketItemFeatures\Queries\GetBasketItemsByBasketId\" />
+    <None Remove="Features\AppEntities\OrderFeatures\" />
+    <None Remove="Features\AppEntities\OrderFeatures\Commands\" />
+    <None Remove="Features\AppEntities\OrderFeatures\Queries\" />
+    <None Remove="Features\AppEntities\OrderFeatures\Commands\CreateOrder\" />
+    <None Remove="Features\AppEntities\OrderFeatures\Commands\DeleteOrder\" />
+    <None Remove="Features\AppEntities\OrderFeatures\Commands\UpdateOrder\" />
+    <None Remove="Features\AppEntities\OrderItemFeatures\" />
+    <None Remove="Features\AppEntities\OrderItemFeatures\Commands\" />
+    <None Remove="Features\AppEntities\OrderItemFeatures\Queries\" />
+    <None Remove="Features\AppEntities\OrderItemFeatures\Commands\CreateOrderItem\" />
+    <None Remove="Features\AppEntities\OrderItemFeatures\Commands\DeleteOrderItem\" />
+    <None Remove="Features\AppEntities\OrderItemFeatures\Commands\UpdateOrderItem\" />
+    <None Remove="Features\AppEntities\OrderItemFeatures\Queries\GetOrderItemsByOrderId\" />
+    <None Remove="Features\AppEntities\ProductFeatures\" />
+    <None Remove="Features\AppEntities\ProductFeatures\Commands\" />
+    <None Remove="Features\AppEntities\ProductFeatures\Queries\" />
+    <None Remove="Features\AppEntities\ProductFeatures\Commands\CreateProduct\" />
+    <None Remove="Features\AppEntities\ProductFeatures\Commands\DeleteProduct\" />
+    <None Remove="Features\AppEntities\ProductFeatures\Commands\UpdateProduct\" />
+    <None Remove="Features\AppEntities\ProductFeatures\Queries\GetAllProducts\" />
+    <None Remove="Features\AppEntities\PaymentTypeFeatures\" />
+    <None Remove="Features\AppEntities\PaymentTypeFeatures\Commands\" />
+    <None Remove="Features\AppEntities\PaymentTypeFeatures\Queries\" />
+    <None Remove="Features\AppEntities\PaymentTypeFeatures\Commands\CreatePaymentType\" />
+    <None Remove="Features\AppEntities\PaymentTypeFeatures\Queries\GetAllPaymentType\" />
+    <None Remove="Features\AppEntities\AddressFeatures\" />
+    <None Remove="Features\AppEntities\AddressFeatures\Commands\" />
+    <None Remove="Features\AppEntities\AddressFeatures\Queries\" />
+    <None Remove="Features\AppEntities\AddressFeatures\Commands\CreateAddress\" />
+    <None Remove="Features\AppEntities\AddressFeatures\Queries\GetAddressByUserId\" />
+    <None Remove="Features\AppEntities\QuantityTypeFeatures\" />
+    <None Remove="Features\AppEntities\QuantityTypeFeatures\Commands\" />
+    <None Remove="Features\AppEntities\QuantityTypeFeatures\Queries\" />
+    <None Remove="Features\AppEntities\QuantityTypeFeatures\Commands\CreateQuantityType\" />
+    <None Remove="Features\AppEntities\QuantityTypeFeatures\Queries\GetAllQuantityTypes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="Features\AppEntities\" />
+    <Folder Include="Features\AppEntities\AuthFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\AuthFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\AuthFeatures\Commands\CreateUser\" />
+    <Folder Include="Services\" />
+    <Folder Include="Features\AppEntities\AuthFeatures\Queries\GetUserById\" />
+    <Folder Include="Features\AppEntities\AuthFeatures\Commands\Login\" />
+    <Folder Include="Features\AppEntities\CategoryFeatures\" />
+    <Folder Include="Features\AppEntities\CategoryFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\CategoryFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\CategoryFeatures\Commands\CreateCategory\" />
+    <Folder Include="Features\AppEntities\CategoryFeatures\Commands\UpdateCategory\" />
+    <Folder Include="Features\AppEntities\CategoryFeatures\Commands\DeleteCategory\" />
+    <Folder Include="Features\AppEntities\CategoryFeatures\Queries\GetAll\" />
+    <Folder Include="Features\AppEntities\BasketFeatures\" />
+    <Folder Include="Features\AppEntities\BasketFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\BasketFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\BasketFeatures\Commands\CreateBasket\" />
+    <Folder Include="Features\AppEntities\BasketFeatures\Commands\UpdateBasket\" />
+    <Folder Include="Features\AppEntities\BasketFeatures\Commands\DeleteBasket\" />
+    <Folder Include="Features\AppEntities\BasketItemFeatures\" />
+    <Folder Include="Features\AppEntities\BasketItemFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\BasketItemFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\BasketItemFeatures\Commands\CreateBasketItem\" />
+    <Folder Include="Features\AppEntities\BasketItemFeatures\Commands\UpdateBasketItem\" />
+    <Folder Include="Features\AppEntities\BasketItemFeatures\Commands\DeleteBasketItem\" />
+    <Folder Include="Features\AppEntities\BasketItemFeatures\Queries\GetBasketItemsByBasketId\" />
+    <Folder Include="Features\AppEntities\OrderFeatures\" />
+    <Folder Include="Features\AppEntities\OrderFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\OrderFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\OrderFeatures\Commands\CreateOrder\" />
+    <Folder Include="Features\AppEntities\OrderFeatures\Commands\DeleteOrder\" />
+    <Folder Include="Features\AppEntities\OrderFeatures\Commands\UpdateOrder\" />
+    <Folder Include="Features\AppEntities\OrderItemFeatures\" />
+    <Folder Include="Features\AppEntities\OrderItemFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\OrderItemFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\OrderItemFeatures\Commands\CreateOrderItem\" />
+    <Folder Include="Features\AppEntities\OrderItemFeatures\Commands\DeleteOrderItem\" />
+    <Folder Include="Features\AppEntities\OrderItemFeatures\Commands\UpdateOrderItem\" />
+    <Folder Include="Features\AppEntities\OrderItemFeatures\Queries\GetOrderItemsByOrderId\" />
+    <Folder Include="Features\AppEntities\ProductFeatures\" />
+    <Folder Include="Features\AppEntities\ProductFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\ProductFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\ProductFeatures\Commands\CreateProduct\" />
+    <Folder Include="Features\AppEntities\ProductFeatures\Commands\DeleteProduct\" />
+    <Folder Include="Features\AppEntities\ProductFeatures\Commands\UpdateProduct\" />
+    <Folder Include="Features\AppEntities\ProductFeatures\Queries\GetAllProducts\" />
+    <Folder Include="Features\AppEntities\PaymentTypeFeatures\" />
+    <Folder Include="Features\AppEntities\PaymentTypeFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\PaymentTypeFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\PaymentTypeFeatures\Commands\CreatePaymentType\" />
+    <Folder Include="Features\AppEntities\PaymentTypeFeatures\Queries\GetAllPaymentType\" />
+    <Folder Include="Features\AppEntities\AddressFeatures\" />
+    <Folder Include="Features\AppEntities\AddressFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\AddressFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\AddressFeatures\Commands\CreateAddress\" />
+    <Folder Include="Features\AppEntities\AddressFeatures\Queries\GetAddressByUserId\" />
+    <Folder Include="Features\AppEntities\QuantityTypeFeatures\" />
+    <Folder Include="Features\AppEntities\QuantityTypeFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\QuantityTypeFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\QuantityTypeFeatures\Commands\CreateQuantityType\" />
+    <Folder Include="Features\AppEntities\QuantityTypeFeatures\Queries\GetAllQuantityTypes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Domain.csproj" />
+  </ItemGroup>
+</Project>

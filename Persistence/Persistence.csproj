@@ -1,0 +1,69 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.Relational" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Constants\" />
+    <None Remove="Context\" />
+    <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="Repositories\" />
+    <None Remove="Migrations\" />
+    <None Remove="Repositories\AppEntities\" />
+    <None Remove="Repositories\AppEntities\AddressesRepository\" />
+    <None Remove="Repositories\AppEntities\CategoryRepository\" />
+    <None Remove="Repositories\AppEntities\BasketRepository\" />
+    <None Remove="Repositories\AppEntities\BasketItemRepository\" />
+    <None Remove="Repositories\AppEntities\OrderRepository\" />
+    <None Remove="Repositories\AppEntities\OrderItemRepository\" />
+    <None Remove="Repositories\AppEntities\PaymentTypeRepository\" />
+    <None Remove="Repositories\AppEntities\ProductRepository\" />
+    <None Remove="Repositories\AppEntities\QuantityTypeRepository\" />
+    <None Remove="Services\" />
+    <None Remove="Services\AppEntities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Constants\" />
+    <Folder Include="Context\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Repositories\AppEntities\" />
+    <Folder Include="Repositories\AppEntities\AddressesRepository\" />
+    <Folder Include="Repositories\AppEntities\CategoryRepository\" />
+    <Folder Include="Repositories\AppEntities\BasketRepository\" />
+    <Folder Include="Repositories\AppEntities\BasketItemRepository\" />
+    <Folder Include="Repositories\AppEntities\OrderRepository\" />
+    <Folder Include="Repositories\AppEntities\OrderItemRepository\" />
+    <Folder Include="Repositories\AppEntities\PaymentTypeRepository\" />
+    <Folder Include="Repositories\AppEntities\ProductRepository\" />
+    <Folder Include="Repositories\AppEntities\QuantityTypeRepository\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\AppEntities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\src\Application\Application.csproj" />
+  </ItemGroup>
+</Project>

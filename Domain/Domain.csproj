@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Entities\" />
+    <None Remove="Entities\Identity\" />
+    <None Remove="Microsoft.AspNetCore.Identity" />
+    <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="Abstractions\" />
+    <None Remove="Repositories\" />
+    <None Remove="Repositories\AppEntities\" />
+    <None Remove="Repositories\AppEntities\BasketRepository\" />
+    <None Remove="Repositories\AppEntities\BasketItemRepository\" />
+    <None Remove="Repositories\AppEntities\CategoryRepository\" />
+    <None Remove="Repositories\AppEntities\AddressRepository\" />
+    <None Remove="Repositories\AppEntities\OrderRepository\" />
+    <None Remove="Repositories\AppEntities\OrderItemRepository\" />
+    <None Remove="Repositories\AppEntities\PaymentTypeRepository\" />
+    <None Remove="Repositories\AppEntities\ProductRepository\" />
+    <None Remove="Repositories\AppEntities\QuantityRepository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Entities\Identity\" />
+    <Folder Include="Abstractions\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\AppEntities\" />
+    <Folder Include="Repositories\AppEntities\BasketRepository\" />
+    <Folder Include="Repositories\AppEntities\BasketItemRepository\" />
+    <Folder Include="Repositories\AppEntities\CategoryRepository\" />
+    <Folder Include="Repositories\AppEntities\AddressRepository\" />
+    <Folder Include="Repositories\AppEntities\OrderRepository\" />
+    <Folder Include="Repositories\AppEntities\OrderItemRepository\" />
+    <Folder Include="Repositories\AppEntities\PaymentTypeRepository\" />
+    <Folder Include="Repositories\AppEntities\ProductRepository\" />
+    <Folder Include="Repositories\AppEntities\QuantityRepository\" />
+  </ItemGroup>
+</Project>
