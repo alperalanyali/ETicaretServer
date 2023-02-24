@@ -34,7 +34,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<Product>> GetAllProduct()
         {
-            return await _productQuery.GetAll().ToListAsync();
+            return await _productQuery.GetAll().Include("QantityTypes").ToListAsync();
         }
 
         public async Task<Product> GetById(string id)

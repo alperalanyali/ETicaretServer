@@ -6,9 +6,9 @@ using Persistence.Repositories.GenericRepositories.AppDbContext;
 
 namespace Persistence.Repositories.AppEntities.OrderItemRepository
 {
-    public class OrderItemRepository : AppQueryRepository<OrderItem>, IOrderItemQueryRepository
+    public class OrderItemQueryRepository : AppQueryRepository<OrderItem>, IOrderItemQueryRepository
     {
-        public OrderItemRepository(AppDbContext context) : base(context)
+        public OrderItemQueryRepository(AppDbContext context) : base(context)
         {
         }
     }

@@ -30,11 +30,7 @@ namespace Domain.Entities
 
 		public string ImageUrl { get; set; }
 
-		public decimal Price { get; set; }
-
-
-		public List<Category> Categories { get; set; }
-
+		public decimal Price { get; set; }		
 	}
 }
 

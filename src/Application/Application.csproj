@@ -72,6 +72,23 @@
     <None Remove="Features\AppEntities\QuantityTypeFeatures\Queries\" />
     <None Remove="Features\AppEntities\QuantityTypeFeatures\Commands\CreateQuantityType\" />
     <None Remove="Features\AppEntities\QuantityTypeFeatures\Queries\GetAllQuantityTypes\" />
+    <None Remove="Features\AppEntities\AddressFeatures\Commands\DeleteAddress\" />
+    <None Remove="Features\AppEntities\AddressFeatures\Commands\UpdateAddress\" />
+    <None Remove="Features\AppEntities\BasketItemFeatures\Queries\GetById\" />
+    <None Remove="Features\AppEntities\AddressFeatures\Queries\GetAddressById\" />
+    <None Remove="Features\AppEntities\OrderFeatures\Queries\GetOrderById\" />
+    <None Remove="Features\AppEntities\OrderFeatures\Queries\GetAllOrders\" />
+    <None Remove="Features\AppEntities\OrderItemFeatures\Queries\GetAllOrderItems\" />
+    <None Remove="Features\AppEntities\PaymentTypeFeatures\Queries\GetPaymentTypeById\" />
+    <None Remove="Features\AppEntities\ProductCategoryFeatures\" />
+    <None Remove="Features\AppEntities\ProductCategoryFeatures\Commands\" />
+    <None Remove="Features\AppEntities\ProductCategoryFeatures\Queries\" />
+    <None Remove="Features\AppEntities\ProductCategoryFeatures\Commands\CreateProductCategory\" />
+    <None Remove="Features\AppEntities\ProductCategoryFeatures\Commands\DeleteProductCategory\" />
+    <None Remove="Features\AppEntities\ProductCategoryFeatures\Commands\UpdateProductCategory\" />
+    <None Remove="Features\AppEntities\ProductCategoryFeatures\Queries\GetAllProductCategory\" />
+    <None Remove="Features\AppEntities\ProductCategoryFeatures\Queries\GetProductCategoriesByProductId\" />
+    <None Remove="Features\AppEntities\ProductCategoryFeatures\Queries\GetProductCategoriesByCategoryId\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -137,6 +154,23 @@
     <Folder Include="Features\AppEntities\QuantityTypeFeatures\Queries\" />
     <Folder Include="Features\AppEntities\QuantityTypeFeatures\Commands\CreateQuantityType\" />
     <Folder Include="Features\AppEntities\QuantityTypeFeatures\Queries\GetAllQuantityTypes\" />
+    <Folder Include="Features\AppEntities\AddressFeatures\Commands\DeleteAddress\" />
+    <Folder Include="Features\AppEntities\AddressFeatures\Commands\UpdateAddress\" />
+    <Folder Include="Features\AppEntities\BasketItemFeatures\Queries\GetById\" />
+    <Folder Include="Features\AppEntities\AddressFeatures\Queries\GetAddressById\" />
+    <Folder Include="Features\AppEntities\OrderFeatures\Queries\GetOrderById\" />
+    <Folder Include="Features\AppEntities\OrderFeatures\Queries\GetAllOrders\" />
+    <Folder Include="Features\AppEntities\OrderItemFeatures\Queries\GetAllOrderItems\" />
+    <Folder Include="Features\AppEntities\PaymentTypeFeatures\Queries\GetPaymentTypeById\" />
+    <Folder Include="Features\AppEntities\ProductCategoryFeatures\" />
+    <Folder Include="Features\AppEntities\ProductCategoryFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\ProductCategoryFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\ProductCategoryFeatures\Commands\CreateProductCategory\" />
+    <Folder Include="Features\AppEntities\ProductCategoryFeatures\Commands\DeleteProductCategory\" />
+    <Folder Include="Features\AppEntities\ProductCategoryFeatures\Commands\UpdateProductCategory\" />
+    <Folder Include="Features\AppEntities\ProductCategoryFeatures\Queries\GetAllProductCategory\" />
+    <Folder Include="Features\AppEntities\ProductCategoryFeatures\Queries\GetProductCategoriesByProductId\" />
+    <Folder Include="Features\AppEntities\ProductCategoryFeatures\Queries\GetProductCategoriesByCategoryId\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.0" />

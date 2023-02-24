@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{C42B0C7E-74A1-42B4-B8B0-D5E3D00187BD}|http">
+  <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/EticaretWebApi/Controllers/AddressController.cs">
+    <Files>
+      <File FileName="src/EticaretWebApi/Configuration/PersistenceDIServiceInstaller.cs" Line="69" Column="99" />
+      <File FileName="src/EticaretWebApi/Controllers/AddressController.cs" Line="18" Column="10" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -14,23 +15,19 @@
             <Node name="src" expanded="True">
               <Node name="Core" expanded="True">
                 <Node name="Application" expanded="True">
-                  <Node name="Features" expanded="True">
-                    <Node name="AppEntities" expanded="True">
-                      <Node name="QuantityTypeFeatures">
-                        <Node name="Queries">
-                          <Node name="GetAllQuantityTypes">
-                            <Node name="GetAllQuantityTypesQueryHandler.cs" selected="True" />
-                          </Node>
-                        </Node>
-                      </Node>
-                    </Node>
-                  </Node>
+                  <Node name="Features" expanded="True" />
                 </Node>
                 <Node name="Domain" expanded="True">
-                  <Node name="Entities" expanded="True" />
+                  <Node name="Repositories" expanded="True">
+                    <Node name="AppEntities" expanded="True" />
+                  </Node>
                 </Node>
               </Node>
-              <Node name="EticaretWebApi" expanded="True" />
+              <Node name="EticaretWebApi" expanded="True">
+                <Node name="Controllers" expanded="True">
+                  <Node name="AddressController.cs" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
@@ -40,5 +37,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>

@@ -27,6 +27,7 @@ namespace Persistence.Context
 		public DbSet<OrderItem> OrderItems { get; set; }
 		public DbSet<PaymentType> PaymentTypes { get; set; }
 		public DbSet<QuantityType> QuantityTypes { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -12,6 +12,7 @@ namespace Persistence.Constants
         public static string PaymentTypes = nameof(PaymentTypes);
         public static string Products = nameof(Products);
         public static string QuantityTypes = nameof(QuantityTypes);
+        public static string ProductCategories = nameof(ProductCategories);
     }
 }
 

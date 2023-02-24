@@ -29,6 +29,7 @@
     <None Remove="Repositories\AppEntities\QuantityTypeRepository\" />
     <None Remove="Services\" />
     <None Remove="Services\AppEntities\" />
+    <None Remove="Repositories\AppEntities\ProductCategoryRepository\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
@@ -61,6 +62,7 @@
     <Folder Include="Repositories\AppEntities\QuantityTypeRepository\" />
     <Folder Include="Services\" />
     <Folder Include="Services\AppEntities\" />
+    <Folder Include="Repositories\AppEntities\ProductCategoryRepository\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
