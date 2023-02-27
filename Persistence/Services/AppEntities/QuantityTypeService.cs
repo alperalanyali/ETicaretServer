@@ -22,7 +22,7 @@ namespace Persistence.Services.AppEntities
         public async Task CreateAsync(QuantityType quantityType, CancellationToken cancellationToken)
         {
             await _quantityTypeCommand.AddAsync(quantityType, cancellationToken);
-            _unitOfWork.SaveChangesAsync(cancellationToken);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
 
         }
 
@@ -34,7 +34,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<QuantityType>> GetAll()
         {
-            var results = await _quantityTypeQuery.GetAll(false).ToListAsync();
+            var results = await _quantityTypeQuery.GetAll().ToListAsync();
 
             return results;
         }

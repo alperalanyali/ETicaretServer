@@ -1,12 +1,17 @@
 ﻿<Properties StartupConfiguration="{C42B0C7E-74A1-42B4-B8B0-D5E3D00187BD}|http">
   <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/alperalanyali/Desktop/EticaretServer/Persistence/Services/AppEntities/QuantityTypeService.cs" relfile="Persistence/Services/AppEntities/QuantityTypeService.cs" line="37" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/EticaretWebApi/Controllers/AddressController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Services/AppEntities/BasketItemService.cs">
     <Files>
-      <File FileName="src/EticaretWebApi/Configuration/PersistenceDIServiceInstaller.cs" Line="69" Column="99" />
-      <File FileName="src/EticaretWebApi/Controllers/AddressController.cs" Line="18" Column="10" />
+      <File FileName="Persistence/Services/AppEntities/BasketItemService.cs" Line="42" Column="108" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,18 +20,32 @@
             <Node name="src" expanded="True">
               <Node name="Core" expanded="True">
                 <Node name="Application" expanded="True">
-                  <Node name="Features" expanded="True" />
+                  <Node name="Features" expanded="True">
+                    <Node name="AppEntities" expanded="True">
+                      <Node name="ProductCategoryFeatures" expanded="True">
+                        <Node name="Commands" expanded="True">
+                          <Node name="CreateProductCategory" expanded="True" />
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
                 </Node>
                 <Node name="Domain" expanded="True">
-                  <Node name="Repositories" expanded="True">
-                    <Node name="AppEntities" expanded="True" />
+                  <Node name="Entities" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="External" expanded="True">
+                <Node name="Persistence" expanded="True">
+                  <Node name="Context" expanded="True" />
+                  <Node name="Services" expanded="True">
+                    <Node name="AppEntities" expanded="True">
+                      <Node name="BasketItemService.cs" selected="True" />
+                    </Node>
                   </Node>
                 </Node>
               </Node>
               <Node name="EticaretWebApi" expanded="True">
-                <Node name="Controllers" expanded="True">
-                  <Node name="AddressController.cs" selected="True" />
-                </Node>
+                <Node name="Controllers" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -37,8 +56,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>

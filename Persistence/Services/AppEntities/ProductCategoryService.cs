@@ -33,7 +33,8 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<ProductCategory>> GetAllProductCategory()
         {
-            return await _productCategoryQuery.GetAll().Include("Products").Include("Categories").ToListAsync();
+
+            return await _productCategoryQuery.GetAll().Include("Product").Include("Category").ToListAsync();
         }
 
         public async Task<ProductCategory> GetById(string id)
@@ -43,12 +44,12 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<ProductCategory>> GetProductCategoryByCategoryId(Guid categoryId)
         {
-            return await _productCategoryQuery.GetWhere(p => p.CategoryId == categoryId).Include("Products").Include("Categories").ToListAsync();
+            return await _productCategoryQuery.GetWhere(p => p.CategoryId == categoryId).Include("Product").Include("Category").ToListAsync();
         }
 
         public async Task<IList<ProductCategory>> GetProductCategoryByProductId(Guid productId)
         {
-            return await _productCategoryQuery.GetWhere(p => p.ProductId == productId).Include("Products").Include("Categories").ToListAsync();
+            return await _productCategoryQuery.GetWhere(p => p.ProductId == productId).Include("Product").Include("Category").ToListAsync();
         }
 
         public async Task UpdateProductCategory(ProductCategory productCategory, CancellationToken cancellationToken)

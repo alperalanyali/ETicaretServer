@@ -34,7 +34,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<Product>> GetAllProduct()
         {
-            return await _productQuery.GetAll().Include("QantityTypes").ToListAsync();
+            return await _productQuery.GetAll().ToListAsync();
         }
 
         public async Task<Product> GetById(string id)
@@ -49,7 +49,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<Product>> GetProductsByQuantityTypeId(string quantityTypeId)
         {
-            return await _productQuery.GetWhere(p => p.QuantityTypeId == new Guid(quantityTypeId)).ToListAsync();
+            return await _productQuery.GetWhere(p => p.QuantityTypeId == new Guid(quantityTypeId)).Include("QuantityTypes").ToListAsync();
         }
 
         public async Task Update(Product product, CancellationToken cancellationToken)

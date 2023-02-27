@@ -28,12 +28,21 @@ namespace Domain.Entities
 		public AppUser User { get; set; }
 		
         [Required]
+		[StringLength(100)]
+		
         public string City { get; set; }
         [Required]
+        [StringLength(100)]
         public string Country { get; set; }
 		[Required]
-		public string Address1 { get; set; }
-		public string Address2 { get; set; }
+        [StringLength(200)]
+        public string Address1 { get; set; }
+        [StringLength(200)]
+        public string Address2 { get; set; }
+
+		[Required]
+        [StringLength(20)]
+        public string ZipCode { get; set; }
 
 	}
 }

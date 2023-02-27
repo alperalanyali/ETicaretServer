@@ -44,7 +44,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<OrderItem>> GetOrderItemByOrderId(string orderId)
         {
-            return await _orderItemQuery.GetWhere(p => p.OrderId == new Guid(orderId)).ToListAsync();
+            return await _orderItemQuery.GetWhere(p => p.OrderId == new Guid(orderId)).Include("Product").ToListAsync();
         }
 
         public async Task Update(OrderItem orderItem, CancellationToken cancellationToken)

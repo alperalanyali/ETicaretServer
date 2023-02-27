@@ -10,7 +10,7 @@ namespace Application.Features.AppEntities.ProductCategoryFeatures.Commands.Crea
         private readonly IProductCategoryService _productCategorySer;
         public CreateProductCategoryCommandHandler(IProductCategoryService productCategoryService)
         {
-
+            _productCategorySer = productCategoryService;
         }
         public async Task<CreateProductCategoryCommandResponse> Handle(CreateProductCategoryCommand request, CancellationToken cancellationToken)
         {
