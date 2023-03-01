@@ -40,10 +40,9 @@ namespace EticaretWebApi.Controllers
             var response = await _mediatR.Send(request);
             return Ok(response);
         }
-        [HttpGet("[action]")]
-        public async Task<IActionResult> GetAllProductCategory()
-        {
-            var request = new GetAllProductCategoryQuery();
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetAllProductCategory(GetAllProductCategoryQuery request)
+        {           
             var response = await _mediatR.Send(request);
             return Ok(response);
         }

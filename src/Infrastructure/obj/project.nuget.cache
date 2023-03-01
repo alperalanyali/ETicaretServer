@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LsFnfZRBM4XZm5XsPI0SZe98werx96Dzr1P3uM4RCwq88UV4XgTMThUz2r0X9exookW1sDilNS3G0F3kAyLikQ==",
+  "dgSpecHash": "dU2kGqr1mohmDsFnTUbS0YNi4qh5LW4tN+52hI1j/1l5Gu+1xkLmwfL496I7/V52TYBaeAZgFte+mOq1uJKa6w==",
   "success": true,
-  "projectFilePath": "/Users/alperalanyali/Desktop/EticaretServer/src/Infrastructure/Infrastructure.csproj",
+  "projectFilePath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

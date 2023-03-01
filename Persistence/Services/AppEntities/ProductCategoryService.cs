@@ -31,10 +31,10 @@ namespace Persistence.Services.AppEntities
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task<IList<ProductCategory>> GetAllProductCategory()
+        public async Task<IList<ProductCategory>> GetAllProductCategory(int pageNumber,int pageSize)
         {
-
-            return await _productCategoryQuery.GetAll().Include("Product").Include("Category").ToListAsync();
+            var results = await _productCategoryQuery.GetAll().Include("Product").Include("Category").Take(pageSize).Skip(pageNumber - 1).ToListAsync();
+            return results;
         }
 
         public async Task<ProductCategory> GetById(string id)

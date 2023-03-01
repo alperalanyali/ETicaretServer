@@ -1,4 +1,5 @@
 ﻿using System;
+using Domain.Dtos;
 using Domain.Entities;
 
 namespace Application.Features.AppEntities.ProductFeatures.Queries.GetAllProducts
@@ -6,7 +7,8 @@ namespace Application.Features.AppEntities.ProductFeatures.Queries.GetAllProduct
 	public sealed record GetAllProductsQueryResponse(
 			bool IsSuccess,
 			int results,
-			IList<Product> Data
+			//IList<Product> Data
+			IList<ProductDto> Data
 		);
 
 }

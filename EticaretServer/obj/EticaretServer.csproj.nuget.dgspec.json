@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alperalanyali/Desktop/EticaretServer/EticaretServer/EticaretServer.csproj": {}
+    "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/EticaretServer/EticaretServer.csproj": {}
   },
   "projects": {
-    "/Users/alperalanyali/Desktop/EticaretServer/EticaretServer/EticaretServer.csproj": {
+    "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/EticaretServer/EticaretServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alperalanyali/Desktop/EticaretServer/EticaretServer/EticaretServer.csproj",
+        "projectUniqueName": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/EticaretServer/EticaretServer.csproj",
         "projectName": "EticaretServer",
-        "projectPath": "/Users/alperalanyali/Desktop/EticaretServer/EticaretServer/EticaretServer.csproj",
+        "projectPath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/EticaretServer/EticaretServer.csproj",
         "packagesPath": "/Users/alperalanyali/.nuget/packages/",
-        "outputPath": "/Users/alperalanyali/Desktop/EticaretServer/EticaretServer/obj/",
+        "outputPath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/EticaretServer/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

@@ -1,5 +1,6 @@
 ﻿using System;
 using Application.Messaging;
+using Microsoft.AspNetCore.Http;
 
 namespace Application.Features.AppEntities.ProductFeatures.Commands.CreateProduct
 {
@@ -7,7 +8,8 @@ namespace Application.Features.AppEntities.ProductFeatures.Commands.CreateProduc
 		string Code,
 		string Name,
 		Guid QuantityTypeId,
-		string ImageUrl,
+		IFormFile ImageUrl,
+		string Description,
 		decimal Price		
 		):ICommand<CreateProductCommandResponse>;
 	

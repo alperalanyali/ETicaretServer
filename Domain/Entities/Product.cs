@@ -11,14 +11,16 @@ namespace Domain.Entities
 
 		}
 
-		public Product(string name,string code,Guid quantityTypeId,string imageUrl,decimal price)
+		public Product(string name,string code,Guid quantityTypeId,string imageUrl,string description,decimal price)
 		{
 			Id = Guid.NewGuid();
 			Code = code;
 			Name = name;
 			QuantityTypeId = quantityTypeId;
 			ImageUrl = imageUrl;
+			Description = description;
 			Price = price;
+
 		}
 		public string Code { get; set; }
 
@@ -28,9 +30,13 @@ namespace Domain.Entities
 		public Guid QuantityTypeId { get; set; }
 		public QuantityType QuantityType{ get; set; }
 
+		public string Description { get; set; }
 		public string ImageUrl { get; set; }
 
-		public decimal Price { get; set; }		
+		public decimal Price { get; set; }
+
+	
+	
 	}
 }
 

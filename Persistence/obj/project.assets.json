@@ -4444,11 +4444,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alperalanyali/Desktop/EticaretServer/Persistence/Persistence.csproj",
+      "projectUniqueName": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Persistence/Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "/Users/alperalanyali/Desktop/EticaretServer/Persistence/Persistence.csproj",
+      "projectPath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Persistence/Persistence.csproj",
       "packagesPath": "/Users/alperalanyali/.nuget/packages/",
-      "outputPath": "/Users/alperalanyali/Desktop/EticaretServer/Persistence/obj/",
+      "outputPath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Persistence/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -4467,11 +4467,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/alperalanyali/Desktop/EticaretServer/Domain/Domain.csproj": {
-              "projectPath": "/Users/alperalanyali/Desktop/EticaretServer/Domain/Domain.csproj"
+            "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/Domain.csproj": {
+              "projectPath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/Domain.csproj"
             },
-            "/Users/alperalanyali/Desktop/EticaretServer/src/Application/Application.csproj": {
-              "projectPath": "/Users/alperalanyali/Desktop/EticaretServer/src/Application/Application.csproj"
+            "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Application.csproj": {
+              "projectPath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Application.csproj"
             }
           }
         }

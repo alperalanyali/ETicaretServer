@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YCbgRzrgCsLKqK5twJE/cFkw9O4synAV4txuC0po+Y+87uWtcKTjP1VdVsqCWVICBgLfZn2Un+mQvnnbXf1JBA==",
+  "dgSpecHash": "V+2Iaj26Go84vZMLfRH1lMeZ0/RJRbL0FeKfdKG7sg7iaeWJDysX6+a9+z294oP6VoEGWa80wxHUEaqqX8vW7w==",
   "success": true,
-  "projectFilePath": "/Users/alperalanyali/Desktop/EticaretServer/src/Application/Application.csproj",
+  "projectFilePath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Application.csproj",
   "expectedPackageFiles": [
     "/Users/alperalanyali/.nuget/packages/mediatr/12.0.0/mediatr.12.0.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/mediatr.contracts/2.0.0/mediatr.contracts.2.0.0.nupkg.sha512",

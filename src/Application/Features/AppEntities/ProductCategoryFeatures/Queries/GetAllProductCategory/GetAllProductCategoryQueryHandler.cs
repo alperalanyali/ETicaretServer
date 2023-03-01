@@ -15,7 +15,7 @@ namespace Application.Features.AppEntities.ProductCategoryFeatures.Queries.GetAl
 
         public async Task<GetAllProductCategoryQueryResponse> Handle(GetAllProductCategoryQuery request, CancellationToken cancellationToken)
         {
-            var productCategories = await _productCatService.GetAllProductCategory();
+            var productCategories = await _productCatService.GetAllProductCategory(request.PageNumber,request.PageSize);
 
             return new(productCategories.Count(), productCategories);
         }

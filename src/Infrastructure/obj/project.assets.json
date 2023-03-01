@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alperalanyali/Desktop/EticaretServer/src/Infrastructure/Infrastructure.csproj",
+      "projectUniqueName": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Infrastructure/Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "/Users/alperalanyali/Desktop/EticaretServer/src/Infrastructure/Infrastructure.csproj",
+      "projectPath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Infrastructure/Infrastructure.csproj",
       "packagesPath": "/Users/alperalanyali/.nuget/packages/",
-      "outputPath": "/Users/alperalanyali/Desktop/EticaretServer/src/Infrastructure/obj/",
+      "outputPath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

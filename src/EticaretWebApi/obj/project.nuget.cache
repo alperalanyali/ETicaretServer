@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xqyz4OQiskenZPyXTm92fTmYVf1ibQbfw6eEaLRv94O+dTrJbbFgHndgt1mmCrkAKOGng5BbgRMbwklS91WQWQ==",
+  "dgSpecHash": "nre5jXDqFEnznsBAQ184uSMHBkok05ukExIDEXJVj4QlKvu7469YDJxXG3VevmPg5KBcyig+mDAR6dPs/dBBSw==",
   "success": true,
-  "projectFilePath": "/Users/alperalanyali/Desktop/EticaretServer/src/EticaretWebApi/EticaretWebApi.csproj",
+  "projectFilePath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/EticaretWebApi.csproj",
   "expectedPackageFiles": [
     "/Users/alperalanyali/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

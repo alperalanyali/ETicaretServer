@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p0CWmUSCJut/fKixMce1NIRS1RbD/BJjYLbQAx3+nWL24d3Tf4o40QoAc8Wsswea+ijStJg4Ic0dTxAuv6JEqA==",
+  "dgSpecHash": "HP5r5VwQ7fkG3keUjrg4/8fqPRz4BFbBV3yth3Z8qczKH/SKa9eQJFyY5OakVYAYLhBfHXJZXYLeRSwIVWT4gg==",
   "success": true,
-  "projectFilePath": "/Users/alperalanyali/Desktop/EticaretServer/Persistence/Persistence.csproj",
+  "projectFilePath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Persistence/Persistence.csproj",
   "expectedPackageFiles": [
     "/Users/alperalanyali/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

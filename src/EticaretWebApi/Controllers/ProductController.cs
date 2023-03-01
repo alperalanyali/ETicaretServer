@@ -22,7 +22,7 @@ namespace EticaretWebApi.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> Create(CreateProductCommand request)
+        public async Task<IActionResult> Create([FromForm]CreateProductCommand request)
         {
             var response = await _mediatR.Send(request);
             return Ok(response);
@@ -40,10 +40,9 @@ namespace EticaretWebApi.Controllers
             var response = await _mediatR.Send(request);
             return Ok(response);
         }
-        [HttpGet("[action]")]
-        public async Task<IActionResult> GetAllProducts()
-        {
-            var request =new  GetAllProductsQuery();
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetAllProducts(GetAllProductsQuery request)
+        {            
             var response = await _mediatR.Send(request);
             return Ok(response);
         }

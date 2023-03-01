@@ -1996,11 +1996,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alperalanyali/Desktop/EticaretServer/src/Application/Application.csproj",
+      "projectUniqueName": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Application.csproj",
       "projectName": "Application",
-      "projectPath": "/Users/alperalanyali/Desktop/EticaretServer/src/Application/Application.csproj",
+      "projectPath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Application.csproj",
       "packagesPath": "/Users/alperalanyali/.nuget/packages/",
-      "outputPath": "/Users/alperalanyali/Desktop/EticaretServer/src/Application/obj/",
+      "outputPath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -2019,8 +2019,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/alperalanyali/Desktop/EticaretServer/Domain/Domain.csproj": {
-              "projectPath": "/Users/alperalanyali/Desktop/EticaretServer/Domain/Domain.csproj"
+            "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/Domain.csproj": {
+              "projectPath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/Domain.csproj"
             }
           }
         }

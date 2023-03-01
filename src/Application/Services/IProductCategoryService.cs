@@ -8,7 +8,7 @@ namespace Application.Services
 		Task CreateProductCategory(ProductCategory productCategory, CancellationToken cancellationToken);
 		Task UpdateProductCategory(ProductCategory productCategory, CancellationToken cancellationToken);
 		Task DeleteProductCategory(string id, CancellationToken cancellationToken);
-		Task<IList<ProductCategory>> GetAllProductCategory();
+		Task<IList<ProductCategory>> GetAllProductCategory(int pageNumber,int pageSize);
 		Task<IList<ProductCategory>> GetProductCategoryByProductId(Guid productId);
 		Task<IList<ProductCategory>> GetProductCategoryByCategoryId(Guid categoryId);
 		Task<ProductCategory> GetById(string id);

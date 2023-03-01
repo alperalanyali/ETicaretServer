@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zoj+Tb4yvZrCVQUx1lddGBYFaGmBIeGOIfzDCvPiWaa4nj68+6R5VjrKQ34s7bnzhtDipMpybB6S6ezdLLGMGQ==",
+  "dgSpecHash": "rRKDU3Jcm4K19Mwh4bQXVwZnUWoIL5gU2/q0mUYuyvM9Ucf6N9jnqP8qgdKbEE0igm7oczki6BBniGbayDv9gw==",
   "success": true,
-  "projectFilePath": "/Users/alperalanyali/Desktop/EticaretServer/Domain/Domain.csproj",
+  "projectFilePath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/Domain.csproj",
   "expectedPackageFiles": [
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
