@@ -1,5 +1,6 @@
 ﻿using System;
 using Application.Services;
+using Domain.Dtos;
 using Domain.Entities;
 using Domain.Repositories.AppEntities.ProductRepository;
 using Domain.UnitOfWork;
@@ -36,10 +37,37 @@ namespace Persistence.Services.AppEntities
         {
             return await _productQuery.GetAll().Include("QuantityType").Take(pageSize).Skip(pageNumber-1).ToListAsync();
         }
+        public async Task<IList<Product>> GetAllProductWithCategories(int pageNumber, int pageSize)
+        {
+            var result =
+                _productQuery
+                .GetAll()                
+                .Include(p => p.ProductCategories)
+                .ThenInclude(p => p.Category)
+                .Include("QuantityType")
+                .Take(pageSize)
+                .Skip(pageNumber - 1)
+                ;
+              
+            //var newResult = result.
+            return await result.ToListAsync();
+        }
+
 
         public async Task<Product> GetById(string id)
         {
             return await _productQuery.GetById(id, false);
+        }
+
+        public async Task<bool> CheckExistProductByCodeAndName(string code, string name)
+        {
+            var result = false;
+            var product = await _productQuery.GetWhere(p => p.Code == code && p.Name == name).FirstOrDefaultAsync();
+            if (product != null)
+            {
+                result = true;
+            }
+            return result;
         }
 
         public Task<IList<Product>> GetProductsByCategoryId(string categoryId)
@@ -56,6 +84,11 @@ namespace Persistence.Services.AppEntities
         {
             _productCommand.Update(product);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
+        }
+
+        public async Task<Product> GetProductByCodeAndName(string code, string name)
+        {
+            return await _productQuery.GetWhere(p => p.Code == code && p.Name == name).FirstOrDefaultAsync(); 
         }
     }
 }

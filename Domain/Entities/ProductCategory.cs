@@ -17,11 +17,11 @@ namespace Domain.Entities
 			ProductId = productId;
 			CategoryId = categoryId;
 		}
-		[ForeignKey("Products")]
+		//[ForeignKey("Product")]
 		public Guid ProductId { get; set; }
-		public Product Product { get; set; }
+		//public Product Product { get; set; }
 
-		[ForeignKey("Categories")]
+		[ForeignKey("Category")]
 		public Guid CategoryId { get; set; }
 		public Category Category { get; set; }
 	}

@@ -7,7 +7,7 @@ namespace Application.Features.AppEntities.ProductFeatures.Commands.CreateProduc
 	public sealed record CreateProductCommand(
 		string Code,
 		string Name,
-		Guid QuantityTypeId,
+		string QuantityTypeId,
 		IFormFile ImageUrl,
 		string Description,
 		decimal Price		

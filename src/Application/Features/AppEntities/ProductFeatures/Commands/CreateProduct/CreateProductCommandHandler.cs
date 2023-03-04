@@ -20,9 +20,11 @@ namespace Application.Features.AppEntities.ProductFeatures.Commands.CreateProduc
             //$"/Users/alperalanyali/Desktop/ETicaret/ETicaretClient/src/assets/images/{fileName}";
             string filePath = "/Users/alperalanyali/Desktop/ETicaret/ETicaretClient/src/assets/images/";
             var stringFileName = FileService.FileSaveToServer(request.ImageUrl,filePath) ;
+
+            var quantityTypeId = new Guid(request.QuantityTypeId);
             var imageUrl = $"{stringFileName}";
-            var product = new Product(request.Name, request.Code, request.QuantityTypeId,imageUrl,"", request.Price);
-                await _productService.Create(product, cancellationToken);
+            var product = new Product(request.Name, request.Code, quantityTypeId, imageUrl,request.Description, request.Price);
+            await _productService.Create(product, cancellationToken);
             return new();
         }
     }

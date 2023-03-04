@@ -7,8 +7,8 @@ namespace Application.Features.AppEntities.ProductFeatures.Queries.GetAllProduct
 	public sealed record GetAllProductsQueryResponse(
 			bool IsSuccess,
 			int results,
-			//IList<Product> Data
-			IList<ProductDto> Data
+			IList<Product> Data
+			//IList<ProductDto> Data
 		);
 
 }
