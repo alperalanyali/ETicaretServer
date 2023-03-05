@@ -56,7 +56,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task<Product> GetById(string id)
         {
-            return await _productQuery.GetById(id, false);
+            return await _productQuery.GetWhere(p => p.Id == new Guid(id)).Include(p =>p.ProductCategories).ThenInclude(p => p.Category).FirstOrDefaultAsync();
         }
 
         public async Task<bool> CheckExistProductByCodeAndName(string code, string name)
@@ -70,9 +70,11 @@ namespace Persistence.Services.AppEntities
             return result;
         }
 
-        public Task<IList<Product>> GetProductsByCategoryId(string categoryId)
+        public async Task<IList<Product>> GetProductsByCategoryId(string categoryId)
         {
-            throw new NotImplementedException();
+            var products = await _productQuery.GetWhere(p => p.ProductCategories.Any(x => x.Category.Id == new Guid(categoryId))).Include(p => p.ProductCategories).ThenInclude(p => p.Category).ToListAsync();
+
+            return products;
         }
 
         public async Task<IList<Product>> GetProductsByQuantityTypeId(string quantityTypeId)

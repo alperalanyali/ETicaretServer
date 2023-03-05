@@ -1,5 +1,6 @@
 ﻿using System;
 using Application.Messaging;
+using Microsoft.AspNetCore.Http;
 
 namespace Application.Features.AppEntities.ProductFeatures.Commands.UpdateProduct
 {
@@ -7,9 +8,10 @@ namespace Application.Features.AppEntities.ProductFeatures.Commands.UpdateProduc
 			string Id,
 			string Code,
 			string Name,
-			Guid QuantityTypeId,
-			decimal Price,
-			string ImageUrl			
+            string Description,
+            string QuantityTypeId,
+			decimal Price,			
+			IFormFile ImageUrl			
 		):ICommand<UpdateProductCommandResponse>;
 	
 }

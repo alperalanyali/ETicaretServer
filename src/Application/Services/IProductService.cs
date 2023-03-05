@@ -16,6 +16,7 @@ namespace Application.Services
 		Task<IList<Product>> GetProductsByQuantityTypeId(string quantityTypeId);
 		Task<bool> CheckExistProductByCodeAndName(string code, string name);
 		Task<Product> GetProductByCodeAndName(string code, string name);
+		
 	}
 }
 

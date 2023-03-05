@@ -1,14 +1,9 @@
 ﻿<Properties StartupConfiguration="{C42B0C7E-74A1-42B4-B8B0-D5E3D00187BD}|http">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Application/Features/AppEntities/ProductFeatures/Queries/CheckProductByCodeAndName/CheckProductByCodeAndNameQueryHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommand.cs">
     <Files>
-      <File FileName="src/Application/Features/AppEntities/ProductFeatures/Queries/CheckProductByCodeAndName/CheckProductByCodeAndNameQueryHandler.cs" Line="26" Column="1" />
-      <File FileName="src/Application/Features/AppEntities/ProductFeatures/Queries/CheckProductByCodeAndName/CheckProductByCodeAndNameQueryResponse.cs" Line="5" Column="15" />
-      <File FileName="src/EticaretWebApi/Controllers/ProductController.cs" />
-      <File FileName="Persistence/Repositories/AppEntities/ProductRepository/ProductCommandRepository.cs" />
-      <File FileName="Persistence/Repositories/GenericRepositories/AppDbContext/AppCommandRepository.cs" />
-      <File FileName="Persistence/Context/AppDbContext.cs" />
-      <File FileName="src/Application/Services/IProductService.cs" />
+      <File FileName="src/Application/Features/AppEntities/ProductFeatures/Commands/UpdateProduct/UpdateProductCommand.cs" Line="11" Column="10" />
+      <File FileName="src/Application/Features/AppEntities/ProductFeatures/Commands/UpdateProduct/UpdateProductCommandHandler.cs" Line="19" Column="70" />
+      <File FileName="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommand.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,11 +15,14 @@
                   <Node name="Features" expanded="True">
                     <Node name="AppEntities" expanded="True">
                       <Node name="ProductFeatures" expanded="True">
-                        <Node name="Queries" expanded="True">
-                          <Node name="CheckProductByCodeAndName" expanded="True">
-                            <Node name="CheckProductByCodeAndNameQueryHandler.cs" selected="True" />
+                        <Node name="Commands" expanded="True">
+                          <Node name="CreateProduct" expanded="True">
+                            <Node name="CreateProductCommand.cs" selected="True" />
                           </Node>
-                          <Node name="GetProductIdByCodeAndName" expanded="True" />
+                          <Node name="UpdateProduct" expanded="True" />
+                        </Node>
+                        <Node name="Queries" expanded="True">
+                          <Node name="CheckProductByCodeAndName" expanded="True" />
                         </Node>
                       </Node>
                     </Node>
@@ -40,14 +38,6 @@
               <Node name="External" expanded="True">
                 <Node name="Persistence" expanded="True">
                   <Node name="Context" expanded="True" />
-                  <Node name="Repositories" expanded="True">
-                    <Node name="AppEntities" expanded="True">
-                      <Node name="ProductRepository" expanded="True" />
-                    </Node>
-                    <Node name="GenericRepositories" expanded="True">
-                      <Node name="AppDbContext" expanded="True" />
-                    </Node>
-                  </Node>
                   <Node name="Services" expanded="True">
                     <Node name="AppEntities" expanded="True" />
                   </Node>
@@ -62,11 +52,14 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/ProductFeatures/Commands/UpdateProduct/UpdateProductCommandHandler.cs" relfile="src/Application/Features/AppEntities/ProductFeatures/Commands/UpdateProduct/UpdateProductCommandHandler.cs" line="15" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>

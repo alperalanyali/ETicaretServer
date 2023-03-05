@@ -92,6 +92,8 @@
     <None Remove="Helpers\" />
     <None Remove="Features\AppEntities\ProductFeatures\Queries\GetProductIdByCodeAndName\" />
     <None Remove="Features\AppEntities\ProductFeatures\Queries\CheckProductByCodeAndName\" />
+    <None Remove="Features\AppEntities\ProductFeatures\Queries\GetProductById\" />
+    <None Remove="Features\AppEntities\ProductFeatures\Queries\GetProductsByCategoryId\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -177,6 +179,8 @@
     <Folder Include="Helpers\" />
     <Folder Include="Features\AppEntities\ProductFeatures\Queries\GetProductIdByCodeAndName\" />
     <Folder Include="Features\AppEntities\ProductFeatures\Queries\CheckProductByCodeAndName\" />
+    <Folder Include="Features\AppEntities\ProductFeatures\Queries\GetProductById\" />
+    <Folder Include="Features\AppEntities\ProductFeatures\Queries\GetProductsByCategoryId\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.0" />

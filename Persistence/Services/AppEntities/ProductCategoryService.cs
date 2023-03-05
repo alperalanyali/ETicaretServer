@@ -49,7 +49,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<ProductCategory>> GetProductCategoryByProductId(Guid productId)
         {
-            return await _productCategoryQuery.GetWhere(p => p.ProductId == productId).Include("Product").Include("Category").ToListAsync();
+            return await _productCategoryQuery.GetWhere(p => p.ProductId == productId).Include("Category").ToListAsync();
         }
 
         public async Task UpdateProductCategory(ProductCategory productCategory, CancellationToken cancellationToken)

@@ -8,8 +8,9 @@ using Application.Features.AppEntities.ProductFeatures.Commands.DeleteProduct;
 using Application.Features.AppEntities.ProductFeatures.Commands.UpdateProduct;
 using Application.Features.AppEntities.ProductFeatures.Queries.CheckProductByCodeAndName;
 using Application.Features.AppEntities.ProductFeatures.Queries.GetAllProducts;
-
+using Application.Features.AppEntities.ProductFeatures.Queries.GetProductById;
 using Application.Features.AppEntities.ProductFeatures.Queries.GetProductIdByCodeAndName;
+using Application.Features.AppEntities.ProductFeatures.Queries.GetProductsByCategoryId;
 using Domain.Entities;
 using EticaretWebApi.Abstractions;
 using MediatR;
@@ -24,11 +25,11 @@ namespace EticaretWebApi.Controllers
     public class ProductController : ApiController
     {
         private readonly AppDbContext _appDBContext;
-        public ProductController(IMediator mediator,AppDbContext appDbContext) : base(mediator)
+        public ProductController(IMediator mediator, AppDbContext appDbContext) : base(mediator)
         {
             _appDBContext = appDbContext;
         }
-        
+
         [HttpPost("[action]")]
         public async Task<IActionResult> Create([FromForm] CreateProductCommand request)
         {
@@ -43,14 +44,14 @@ namespace EticaretWebApi.Controllers
             return Ok(response);
         }
         [HttpPost("[action]")]
-        public async Task<IActionResult> Update(UpdateProductCommand request)
+        public async Task<IActionResult> Update([FromForm] UpdateProductCommand request)
         {
             var response = await _mediatR.Send(request);
             return Ok(response);
         }
         [HttpPost("[action]")]
         public async Task<IActionResult> GetAllProducts(GetAllProductsQuery request)
-        {            
+        {
             var response = await _mediatR.Send(request);
             return Ok(response);
         }
@@ -66,6 +67,20 @@ namespace EticaretWebApi.Controllers
             var response = await _mediatR.Send(request);
             return Ok(response);
         }
-    }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetProductById(GetProductByIdQuery request, CancellationToken cancellationToken)
+        {
+            var response = await _mediatR.Send(request, cancellationToken);
+            return Ok(response);
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetProductsByCategoryId(GetProductsByCategoryIdQuery request)
+        {
+            var response = await _mediatR.Send(request);
+            return Ok(response);
+
+        }
+     }
 }
 

@@ -16,9 +16,10 @@ namespace Application.Features.AppEntities.ProductFeatures.Commands.UpdateProduc
             var product = await _productService.GetById(request.Id);
             product.Name = request.Name;
             product.Code = request.Code;
-            product.QuantityTypeId = request.QuantityTypeId;
+            product.Description = request.Description;
+            product.QuantityTypeId = new Guid(request.QuantityTypeId);
             product.Price = request.Price;
-            product.ImageUrl = request.ImageUrl;
+            //product.ImageUrl = request.ImageUrl;
 
             await _productService.Update(product, cancellationToken);
             return new();
