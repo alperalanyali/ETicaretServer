@@ -44,7 +44,7 @@ namespace Persistence.Services.AppEntities
 
         async Task<IList<Category>> ICategoryService.GetCategories(string searchFor)
         {
-            return await _categoryQuery.GetAll().ToListAsync();
+            return await _categoryQuery.GetAll().OrderBy(p => p.ItemNo).ToListAsync();
         }
 
 

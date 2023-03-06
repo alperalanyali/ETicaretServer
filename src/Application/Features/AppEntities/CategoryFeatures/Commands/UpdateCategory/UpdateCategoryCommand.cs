@@ -5,6 +5,7 @@ namespace Application.Features.AppEntities.CategoryFeatures.Commands.UpdateCateg
 {
 	public sealed record UpdateCategoryCommand(
 			string Id,
+			int ItemNo,
 			string Name,
 			string Code,
 			bool IsActive

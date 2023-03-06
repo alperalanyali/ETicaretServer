@@ -16,6 +16,7 @@ namespace Application.Features.AppEntities.CategoryFeatures.Commands.UpdateCateg
         public async Task<UpdateCategoryCommandResponse> Handle(UpdateCategoryCommand request, CancellationToken cancellationToken)
         {
             var category = await _categoryService.GetById(request.Id);
+            category.ItemNo = request.ItemNo;
             category.Name = request.Name;
             category.Code = request.Code;
             category.IsActive = request.IsActive;

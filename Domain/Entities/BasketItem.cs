@@ -19,9 +19,9 @@ namespace Domain.Entities
 			TotalPrice = totalPrice;
 		}
 
-		[ForeignKey("Baskets")]
+		//[ForeignKey("Baskets")]
 		public Guid BasketId { get; set; }
-		public Basket Basket { get; set; }
+		//public Basket Basket { get; set; }
 
 		[ForeignKey("Products")]
 		public Guid ProductId { get; set; }

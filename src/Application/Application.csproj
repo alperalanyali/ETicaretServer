@@ -94,6 +94,8 @@
     <None Remove="Features\AppEntities\ProductFeatures\Queries\CheckProductByCodeAndName\" />
     <None Remove="Features\AppEntities\ProductFeatures\Queries\GetProductById\" />
     <None Remove="Features\AppEntities\ProductFeatures\Queries\GetProductsByCategoryId\" />
+    <None Remove="Features\AppEntities\BasketFeatures\Queries\GetBasketIdByUserId\" />
+    <None Remove="Features\AppEntities\BasketFeatures\Queries\GetBasketById\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -181,6 +183,8 @@
     <Folder Include="Features\AppEntities\ProductFeatures\Queries\CheckProductByCodeAndName\" />
     <Folder Include="Features\AppEntities\ProductFeatures\Queries\GetProductById\" />
     <Folder Include="Features\AppEntities\ProductFeatures\Queries\GetProductsByCategoryId\" />
+    <Folder Include="Features\AppEntities\BasketFeatures\Queries\GetBasketIdByUserId\" />
+    <Folder Include="Features\AppEntities\BasketFeatures\Queries\GetBasketById\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.0" />

@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Application.Features.AppEntities.BasketFeatures.Commands.CreateBasket;
 using Application.Features.AppEntities.BasketFeatures.Commands.DeleteBasket;
 using Application.Features.AppEntities.BasketFeatures.Commands.UpdateBasket;
+using Application.Features.AppEntities.BasketFeatures.Queries.GetBasketById;
+using Application.Features.AppEntities.BasketFeatures.Queries.GetBasketIdByUserId;
 using EticaretWebApi.Abstractions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -37,7 +39,19 @@ namespace EticaretWebApi.Controllers
             var response = await _mediatR.Send(request);
             return Ok(response);
         }
-    
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetBasketIdByUserId(GetBasketIdByUserIdQuery request)
+        {
+            var response = await _mediatR.Send(request);
+            return Ok(response);
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetBasketById(GetBasketByIdQuery request)
+        {
+            var response = await _mediatR.Send(request);
+
+            return Ok(response);
+        }
     }
 }
 

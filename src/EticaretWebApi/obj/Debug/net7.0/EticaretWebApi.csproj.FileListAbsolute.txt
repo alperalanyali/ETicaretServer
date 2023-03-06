@@ -170,3 +170,4 @@
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.genruntimeconfig.cache
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/ref/EticaretWebApi.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Newtonsoft.Json.dll

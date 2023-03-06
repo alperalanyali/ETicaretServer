@@ -21,6 +21,7 @@ namespace Application.Features.AppEntities.BasketItemFeatures.Commands.UpdateBas
             basketItem.Quantity = request.Quantity;
             basketItem.TotalPrice = request.TotalPrice;
             basketItem.BasketId = request.BasketId;
+            basketItem.Quantity = request.Quantity;
 
             await _basketItemService.Update(basketItem, cancellationToken);
 

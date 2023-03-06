@@ -143,6 +143,9 @@ namespace Persistence.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
+                    b.Property<int>("ItemNo")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -454,7 +457,7 @@ namespace Persistence.Migrations
 
             modelBuilder.Entity("Domain.Entities.BasketItem", b =>
                 {
-                    b.HasOne("Domain.Entities.Basket", "Basket")
+                    b.HasOne("Domain.Entities.Basket", null)
                         .WithMany("BasketItems")
                         .HasForeignKey("BasketId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -465,8 +468,6 @@ namespace Persistence.Migrations
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Basket");
 
                     b.Navigation("Product");
                 });

@@ -19,7 +19,7 @@ namespace Domain.Entities
 			TotalAmount = totalAmount;
 
 		}
-		public List<BasketItem> BasketItems { get; set; }
+		public ICollection<BasketItem> BasketItems { get; set; }
 
 		[ForeignKey("AppUser")]
 		public Guid UserId { get; set; }
@@ -27,6 +27,7 @@ namespace Domain.Entities
 
 		public decimal TotalAmount { get; set; }
 
+		
 		public virtual ICollection<Order> Orders { get; set; }
 	}
 }

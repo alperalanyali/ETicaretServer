@@ -16,12 +16,22 @@ namespace Application.Features.AppEntities.AuthFeatures.Commands.Login
         public async Task<LoginCommandResponse> Handle(LoginCommand request, CancellationToken cancellationToken)
         {
             var user = await _authService.GetByEmailOrUsernameAsync(request.EmailOrUsername);
-            if (user == null)
-                throw new Exception("Böyle bir kullanıcı yoktur");
+            bool isSuccess = true;
+            string message = " ";
+            if (user == null) {                
+                message = "Böyle bir kullanıcı yoktur";
+                isSuccess = false;
+            }
+            
             var checkUser = await _authService.CheckPasswordAsync(user, request.Password);
-            if (!checkUser)
-                throw new Exception("Şifreniz yanlış");
+            if (!checkUser) {
+                message = "Şifreniz yanlış";
+                isSuccess = false;
+            }
+            
             var response = new LoginCommandResponse(
+                isSuccess:isSuccess,
+                Message:message,
                 Email:user.Email,
                 UserId:user.Id,
                 FullName:user.FullName

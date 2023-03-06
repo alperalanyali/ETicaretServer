@@ -36,9 +36,16 @@ namespace Persistence.Services.AppEntities
             return await _basketQuery.GetAll().ToListAsync();
         }
 
+        public async Task<Basket> GetBasketIdByUserId(string userId)
+        {
+            var result = _basketQuery.GetWhere(p => p.UserId == new Guid(userId)).Include(p => p.BasketItems).ThenInclude(b => b.Product).ThenInclude(q => q.QuantityType).OrderByDescending(p => p.CreatedDate).FirstOrDefaultAsync();
+            return await result ; 
+        }
+
         public async Task<Basket> GetById(string id)
         {
-            return await _basketQuery.GetById(id, false);
+            var result = await _basketQuery.GetWhere(p => p.Id == new Guid(id)).Include(p => p.BasketItems).ThenInclude(b => b.Product).FirstOrDefaultAsync();
+            return  result;
         }
 
         public async Task Update(Basket basket, CancellationToken cancellationToken)
