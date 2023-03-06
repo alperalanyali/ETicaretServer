@@ -8,7 +8,8 @@ namespace Application.Features.AppEntities.AddressFeatures.Commands.CreateAddres
 			string City,
 			string Country,
 			string Address1,
-			string Address2
+			string Address2,
+			string ZipCode
 		):ICommand<CreateAddressCommandResponse>;
 
 }

@@ -34,7 +34,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<Address>> GetAddresesByUserId(string userId)
         {
-            var results =await _addressQuery.GetWhere(p => p.UserId == new Guid(userId)).ToListAsync();
+            var results =await _addressQuery.GetWhere(p => p.UserId.ToString() == userId).ToListAsync();
             return results;
         }
 

@@ -16,7 +16,7 @@ namespace Application.Features.AppEntities.OrderFeatures.Commands.CreateOrder
 
         public async Task<CreateOrderCommandResponse> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
         {
-            var order = new Order(request.BasketId,request.Address,request.PaymentTypeId);
+            var order = new Order(request.UserId,request.Address,request.PaymentTypeId);
             await _orderService.Create(order, cancellationToken);
             return new();
         }

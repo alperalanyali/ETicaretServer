@@ -26,9 +26,7 @@ namespace Domain.Entities
 		public AppUser User { get; set; }
 
 		public decimal TotalAmount { get; set; }
-
-		
-		public virtual ICollection<Order> Orders { get; set; }
+	
 	}
 }
 

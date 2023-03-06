@@ -13,7 +13,7 @@ namespace Domain.Entities
 
 		}
 
-		public Address(Guid userId,string city,string country,string address1,string address2)
+		public Address(Guid userId,string city,string country,string address1,string address2,string zipCode)
 		{
 			Id = Guid.NewGuid();
 			UserId = userId;
@@ -21,6 +21,7 @@ namespace Domain.Entities
 			Country = country;
 			Address1 = address1;
 			Address2 = address2;
+			ZipCode = zipCode;
 		}
 
 		[ForeignKey("AppUser")]

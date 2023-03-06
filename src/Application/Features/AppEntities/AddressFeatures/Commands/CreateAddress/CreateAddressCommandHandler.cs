@@ -15,7 +15,7 @@ namespace Application.Features.AppEntities.AddressFeatures.Commands.CreateAddres
 
         public async Task<CreateAddressCommandResponse> Handle(CreateAddressCommand request, CancellationToken cancellationToken)
         {
-            var address = new Address(request.UserId,request.City,request.Country,request.Address1,request.Address2);
+            var address = new Address(request.UserId,request.City,request.Country,request.Address1,request.Address2,request.ZipCode);
             await _addressService.Create(address, cancellationToken);
             return new();
         }

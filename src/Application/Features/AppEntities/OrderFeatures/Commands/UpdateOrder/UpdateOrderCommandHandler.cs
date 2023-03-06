@@ -15,7 +15,7 @@ namespace Application.Features.AppEntities.OrderFeatures.Commands.UpdateOrder
         {
             var order = await _orderService.GetById(request.Id);
             order.AddressId = request.AddressId;
-            order.BasketId = request.BasketId;
+            //order.BasketId = request.BasketId;
             order.PaymentTypeId = request.PaymentId;
 
             await _orderService.Update(order, cancellationToken);

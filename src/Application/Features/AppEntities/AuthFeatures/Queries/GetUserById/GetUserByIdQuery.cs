@@ -5,7 +5,7 @@ using Domain.Entities.Identity;
 namespace Application.Features.AppEntities.AuthFeatures.Queries.GetUserById
 {
 	public record GetUserByIdQuery(
-			Guid UserId
+			string UserId
 		):IQuery<GetUserByIdQueryResponse>;
 	
 }

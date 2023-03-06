@@ -52,7 +52,7 @@ namespace EticaretWebApi.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> GetAddressByUserId(GetAddressByUserIdQuery request)
         {
-            var response = _mediatR.Send(request);
+            var response = await _mediatR.Send(request);
             return Ok(response);
         }
     }

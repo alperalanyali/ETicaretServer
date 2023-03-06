@@ -16,7 +16,7 @@ namespace Application.Features.AppEntities.AddressFeatures.Queries.GetAddressByU
         public async Task<GetAddressByUserIdQueryResponse> Handle(GetAddressByUserIdQuery request, CancellationToken cancellationToken)
         {
             var addresses = await _addressService.GetAddresesByUserId(request.UserId);
-            return new(addresses.Count(), addresses);
+            return new(true,addresses.Count(), addresses);
         }
     }
 }

@@ -10,6 +10,7 @@ namespace Application.Services
 		Task Delete(string id, CancellationToken cancellationToken);
 		Task<IList<Order>> GetAllOrders();
 		Task<Order> GetById(string id);
+		Task<Order> GetLastOrderByUserId(Guid userId);
 	}
 }
 

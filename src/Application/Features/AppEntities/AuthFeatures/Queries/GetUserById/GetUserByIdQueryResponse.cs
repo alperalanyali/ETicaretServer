@@ -1,11 +1,11 @@
 ﻿using System;
+using Domain.Entities.Identity;
+
 namespace Application.Features.AppEntities.AuthFeatures.Queries.GetUserById
 {
-	public class GetUserByIdQueryResponse
-	{
-		public GetUserByIdQueryResponse()
-		{
-		}
-	}
+	public sealed record GetUserByIdQueryResponse(
+		AppUser Data
+		);
+
 }
 

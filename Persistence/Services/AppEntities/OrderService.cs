@@ -42,6 +42,12 @@ namespace Persistence.Services.AppEntities
             return await _orderQuery.GetById(id, false);
         }
 
+        public async Task<Order> GetLastOrderByUserId(Guid userId)
+        {
+            var result = await _orderQuery.GetWhere(p => p.UserId == userId).OrderByDescending(p => p.CreatedDate).FirstOrDefaultAsync();
+            return result;
+        }
+
         public async Task Update(Order order, CancellationToken cancellationToken)
         {
             _orderCommand.Update(order);

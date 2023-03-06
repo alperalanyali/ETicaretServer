@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.AppEntities.AuthFeatures.Commands.CreateUser;
 using Application.Features.AppEntities.AuthFeatures.Commands.Login;
+using Application.Features.AppEntities.AuthFeatures.Queries.GetUserById;
 using EticaretWebApi.Abstractions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +29,14 @@ namespace EticaretWebApi.Controllers
 
         [HttpPost("[action]")]
         public async Task<IActionResult> Login(LoginCommand request,CancellationToken cancellationToken)
+        {
+            var response = await _mediatR.Send(request);
+
+            return Ok(response);
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetUserById(GetUserByIdQuery request)
         {
             var response = await _mediatR.Send(request);
 

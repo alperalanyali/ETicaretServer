@@ -6,6 +6,7 @@ using Application.Features.AppEntities.OrderFeatures.Commands.CreateOrder;
 using Application.Features.AppEntities.OrderFeatures.Commands.DeleteOrder;
 using Application.Features.AppEntities.OrderFeatures.Commands.UpdateOrder;
 using Application.Features.AppEntities.OrderFeatures.Queries.GetAllOrders;
+using Application.Features.AppEntities.OrderFeatures.Queries.GetLastOrderByUserId;
 using Application.Features.AppEntities.OrderFeatures.Queries.GetOrderById;
 using EticaretWebApi.Abstractions;
 using MediatR;
@@ -47,6 +48,12 @@ namespace EticaretWebApi.Controllers
         }
         [HttpPost("[action]")]
         public async Task<IActionResult> GetOrderById(GetOrderByIdQuery request)
+        {
+            var response = await _mediatR.Send(request);
+            return Ok(response);
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetLastOrderByUserId(GetLastOrderByUserIdQuery request)
         {
             var response = await _mediatR.Send(request);
             return Ok(response);
