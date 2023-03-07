@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.AppEntities.OrderItemFeatures.Commands.CreateOrderItem;
+using Application.Features.AppEntities.OrderItemFeatures.Commands.CreateOrderItems;
 using Application.Features.AppEntities.OrderItemFeatures.Commands.DeleteOrderItem;
 using Application.Features.AppEntities.OrderItemFeatures.Commands.UpdateOrderItem;
 using Application.Features.AppEntities.OrderItemFeatures.Queries.GetAllOrderItems;
@@ -51,6 +52,15 @@ namespace EticaretWebApi.Controllers
             var response = await _mediatR.Send(request);
             return Ok(response);
         }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> CreateOrderItemsWithBasketItems(CreateOrderItemsCommand request, CancellationToken cancellationToken)
+        {
+            var response = await _mediatR.Send(request, cancellationToken);
+
+            return Ok(response);
+        }
+
     }
 }
 

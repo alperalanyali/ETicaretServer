@@ -48,11 +48,20 @@ namespace Persistence.Services.AppEntities
             return result;
         }
 
+        public async Task<IList<Order>> GetOrdersByUserId(string userId)
+        {
+            var results = await _orderQuery.GetWhere(p => p.UserId == new Guid(userId)).Include(oi => oi.OrderItems).ThenInclude(p => p.Product).ThenInclude(pc => pc.ProductCategories).ThenInclude(c => c.Category).Include(p=> p.Address).Include(p => p.PaymentType).OrderByDescending(p => p.CreatedDate).Include(p => p.Address).Include(p=>p.PaymentType).Include(p => p.OrderItems).ThenInclude(p => p.Product).ThenInclude(p => p.QuantityType).ToListAsync();
+
+            return results;
+        }
+
         public async Task Update(Order order, CancellationToken cancellationToken)
         {
             _orderCommand.Update(order);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
+
+       
     }
 }
 

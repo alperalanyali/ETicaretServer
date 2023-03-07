@@ -11,6 +11,7 @@ namespace Application.Services
 		Task<IList<Order>> GetAllOrders();
 		Task<Order> GetById(string id);
 		Task<Order> GetLastOrderByUserId(Guid userId);
-	}
+        Task<IList<Order>> GetOrdersByUserId(string userId);
+    }
 }
 

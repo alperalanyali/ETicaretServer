@@ -97,6 +97,9 @@
     <None Remove="Features\AppEntities\BasketFeatures\Queries\GetBasketIdByUserId\" />
     <None Remove="Features\AppEntities\BasketFeatures\Queries\GetBasketById\" />
     <None Remove="Features\AppEntities\OrderFeatures\Queries\GetLastOrderByUserId\" />
+    <None Remove="Features\AppEntities\BasketItemFeatures\Commands\DeleteBasketItemByBasketId\" />
+    <None Remove="Features\AppEntities\OrderItemFeatures\Commands\CreateOrderItems\" />
+    <None Remove="Features\AppEntities\OrderFeatures\Queries\GetOrdersByUserId\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -187,6 +190,9 @@
     <Folder Include="Features\AppEntities\BasketFeatures\Queries\GetBasketIdByUserId\" />
     <Folder Include="Features\AppEntities\BasketFeatures\Queries\GetBasketById\" />
     <Folder Include="Features\AppEntities\OrderFeatures\Queries\GetLastOrderByUserId\" />
+    <Folder Include="Features\AppEntities\BasketItemFeatures\Commands\DeleteBasketItemByBasketId\" />
+    <Folder Include="Features\AppEntities\OrderItemFeatures\Commands\CreateOrderItems\" />
+    <Folder Include="Features\AppEntities\OrderFeatures\Queries\GetOrdersByUserId\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.0" />

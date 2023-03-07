@@ -11,6 +11,7 @@ namespace Application.Services
 		Task<IList<BasketItem>> GetAllBasketItem();
 		Task<IList<BasketItem>> GetBasketItemByBasketId(string basketId);
 		Task<BasketItem> GetById(string id);
+		Task DeleteBasketItemByBasketId(IList<BasketItem> basketItems,CancellationToken cancellationToken);
 	}
 }
 

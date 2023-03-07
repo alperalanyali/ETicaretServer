@@ -20,6 +20,12 @@ namespace Persistence.Services.AppEntities
             _unitOfWork = unitOfWork;
         }
 
+        public async Task AddRange(IList<OrderItem> orderItems, CancellationToken cancellationToken)
+        {
+            await _orderItemCommand.AddRangeAsnyc(orderItems, cancellationToken);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+        }
+
         public async Task Create(OrderItem orderItem, CancellationToken cancellationToken)
         {
             await _orderItemCommand.AddAsync(orderItem, cancellationToken);
@@ -46,6 +52,7 @@ namespace Persistence.Services.AppEntities
         {
             return await _orderItemQuery.GetWhere(p => p.OrderId == new Guid(orderId)).Include("Product").ToListAsync();
         }
+
 
         public async Task Update(OrderItem orderItem, CancellationToken cancellationToken)
         {

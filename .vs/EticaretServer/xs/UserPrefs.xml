@@ -1,18 +1,7 @@
 ﻿<Properties StartupConfiguration="{C42B0C7E-74A1-42B4-B8B0-D5E3D00187BD}|http">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/OrderFeatures/Queries/GetLastOrderByUserId/GetLastOrderByUserIdQueryHandler.cs" relfile="src/Application/Features/AppEntities/OrderFeatures/Queries/GetLastOrderByUserId/GetLastOrderByUserIdQueryHandler.cs" line="18" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Application/Features/AppEntities/OrderFeatures/Queries/GetLastOrderByUserId/GetLastOrderByUserIdQueryHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Services/AppEntities/OrderService.cs">
     <Files>
-      <File FileName="src/EticaretWebApi/Controllers/OrderController.cs" Line="59" Column="33" />
-      <File FileName="src/Application/Features/AppEntities/OrderFeatures/Queries/GetLastOrderByUserId/GetLastOrderByUserIdQueryHandler.cs" Line="20" Column="1" />
-      <File FileName="src/EticaretWebApi/Program.cs" Line="32" Column="1" />
+      <File FileName="Persistence/Services/AppEntities/OrderService.cs" Line="53" Column="440" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,24 +14,23 @@
                     <Node name="AppEntities" expanded="True">
                       <Node name="OrderFeatures" expanded="True">
                         <Node name="Queries" expanded="True">
-                          <Node name="GetLastOrderByUserId" expanded="True">
-                            <Node name="GetLastOrderByUserIdQueryHandler.cs" selected="True" />
-                          </Node>
+                          <Node name="GetOrdersByUserId" expanded="True" />
                         </Node>
                       </Node>
                     </Node>
                   </Node>
-                  <Node name="Helpers" expanded="True" />
-                  <Node name="Services" expanded="True" />
                 </Node>
-                <Node name="Domain" expanded="True">
-                  <Node name="Entities" expanded="True">
-                    <Node name="Identity" expanded="True" />
-                  </Node>
-                </Node>
+                <Node name="Domain" expanded="True" />
               </Node>
               <Node name="External" expanded="True">
-                <Node name="Persistence" expanded="True" />
+                <Node name="Persistence" expanded="True">
+                  <Node name="Services" expanded="True">
+                    <Node name="AppEntities" expanded="True">
+                      <Node name="OrderService.cs" selected="True" />
+                    </Node>
+                  </Node>
+                  <Node name="UnitOfWorks" expanded="True" />
+                </Node>
               </Node>
               <Node name="EticaretWebApi" expanded="True">
                 <Node name="Controllers" expanded="True" />
@@ -53,5 +41,14 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" relfile="src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" line="18" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>

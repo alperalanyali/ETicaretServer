@@ -32,6 +32,14 @@ namespace Persistence.Services.AppEntities
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
 
+        public async Task DeleteBasketItemByBasketId(IList<BasketItem> basketItems,CancellationToken cancellationToken)
+        {
+ 
+             _basketItemCommand.RemoveRange(basketItems);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+            
+        }
+
         public async Task<IList<BasketItem>> GetAllBasketItem()
         {
             return await _basketItemQuery.GetAll().ToListAsync();

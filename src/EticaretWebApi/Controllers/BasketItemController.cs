@@ -7,6 +7,7 @@ using Application.Features.AppEntities.BasketFeatures.Commands.DeleteBasket;
 using Application.Features.AppEntities.BasketFeatures.Commands.UpdateBasket;
 using Application.Features.AppEntities.BasketItemFeatures.Commands.CreateBasketItem;
 using Application.Features.AppEntities.BasketItemFeatures.Commands.DeleteBasketItem;
+using Application.Features.AppEntities.BasketItemFeatures.Commands.DeleteBasketItemByBasketId;
 using Application.Features.AppEntities.BasketItemFeatures.Commands.UpdateBasketItem;
 using Application.Features.AppEntities.BasketItemFeatures.Queries.GetBasketItemsByBasketId;
 using Application.Features.AppEntities.BasketItemFeatures.Queries.GetById;
@@ -57,6 +58,15 @@ namespace EticaretWebApi.Controllers
             var response = await _mediatR.Send(request);
             return Ok(response);
         }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> DeleteBasketItemsByBasketId(DeleteBasketItemByBasketIdCommand request, CancellationToken cancellationToken)
+        {
+            var response = await _mediatR.Send(request);
+
+            return Ok(response);
+        }
+
     }
 }
 

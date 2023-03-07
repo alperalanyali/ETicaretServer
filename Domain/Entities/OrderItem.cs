@@ -19,9 +19,9 @@ namespace Domain.Entities
         }
 
 
-        [ForeignKey("Orders")]
+        //[ForeignKey("Orders")]
         public Guid OrderId { get; set; }
-        public Order Order { get; set; }
+        //public Order Order { get; set; }
 
         [ForeignKey("Products")]
         public Guid ProductId { get; set; }

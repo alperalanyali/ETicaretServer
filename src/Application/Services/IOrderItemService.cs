@@ -11,6 +11,8 @@ namespace Application.Services
 		Task<IList<OrderItem>> GetAllOrderItems();
 		Task<OrderItem> GetById(string id);
 		Task<IList<OrderItem>> GetOrderItemByOrderId(string orderId);
+		Task AddRange(IList<OrderItem> orderItems, CancellationToken cancellationToken);
+	
 	}
 }
 
