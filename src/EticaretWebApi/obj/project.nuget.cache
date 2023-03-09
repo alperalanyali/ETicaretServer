@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "84CecKhJ9OczZM265YywbYSIOr5R5vu5ROnI5HOzcch/yz3LpOvrbL/JwyebSoBVL3SFmWnDr+H5MN/IAEOh8Q==",
+  "dgSpecHash": "0s9k4BH8soWF0KTZ3gMHpMcQYPTfdNk+fNQkpWW3m1juUtE7DTjhBe0V9SkkvZzNW6xCc4cIHWLa83KkF9SjNA==",
   "success": true,
   "projectFilePath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/EticaretWebApi.csproj",
   "expectedPackageFiles": [
     "/Users/alperalanyali/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
+    "/Users/alperalanyali/.nuget/packages/iyzipay/2.1.55/iyzipay.2.1.55.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/mediatr/12.0.0/mediatr.12.0.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/mediatr.contracts/2.0.0/mediatr.contracts.2.0.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",

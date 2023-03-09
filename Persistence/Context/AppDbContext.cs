@@ -28,6 +28,7 @@ namespace Persistence.Context
 		public DbSet<PaymentType> PaymentTypes { get; set; }
 		public DbSet<QuantityType> QuantityTypes { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<IyzicoSetting> IyzicoSettings { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

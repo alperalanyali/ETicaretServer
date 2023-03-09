@@ -46,6 +46,18 @@
           }
         }
       },
+      "Iyzipay/2.1.55": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.1/Iyzipay.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Iyzipay.dll": {}
+        }
+      },
       "MediatR/12.0.0": {
         "type": "package",
         "dependencies": {
@@ -1677,6 +1689,21 @@
           "bin/placeholder/Domain.dll": {}
         }
       },
+      "OnlinePayment-Iyzico/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Application": "1.0.0",
+          "Domain": "1.0.0",
+          "Iyzipay": "2.1.55"
+        },
+        "compile": {
+          "bin/placeholder/OnlinePayment-Iyzico.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlinePayment-Iyzico.dll": {}
+        }
+      },
       "Persistence/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1734,6 +1761,19 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "Iyzipay/2.1.55": {
+      "sha512": "w4UwGNahHAWBv12RK5qIwSiDcmV84bWzBsGJ7Gp2+T1OqFjF6ugQTWamMWIkfCogznd3xO1ftzST8aK9ou5Ypg==",
+      "type": "package",
+      "path": "iyzipay/2.1.55",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "iyzipay.2.1.55.nupkg.sha512",
+        "iyzipay.nuspec",
+        "lib/net45/Iyzipay.dll",
+        "lib/netstandard2.1/Iyzipay.dll"
       ]
     },
     "MediatR/12.0.0": {
@@ -4660,6 +4700,11 @@
       "path": "../../Domain/Domain.csproj",
       "msbuildProject": "../../Domain/Domain.csproj"
     },
+    "OnlinePayment-Iyzico/1.0.0": {
+      "type": "project",
+      "path": "../OnlinePayment-Iyzico/OnlinePayment-Iyzico.csproj",
+      "msbuildProject": "../OnlinePayment-Iyzico/OnlinePayment-Iyzico.csproj"
+    },
     "Persistence/1.0.0": {
       "type": "project",
       "path": "../../Persistence/Persistence.csproj",
@@ -4672,6 +4717,7 @@
       "Domain >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.3",
       "Newtonsoft.Json >= 13.0.2",
+      "OnlinePayment-Iyzico >= 1.0.0",
       "Persistence >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -4714,6 +4760,9 @@
             },
             "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Application.csproj": {
               "projectPath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Application.csproj"
+            },
+            "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/OnlinePayment-Iyzico.csproj": {
+              "projectPath": "/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/OnlinePayment-Iyzico.csproj"
             }
           }
         }
@@ -4760,7 +4809,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
       }
     }
   },

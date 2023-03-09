@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{C42B0C7E-74A1-42B4-B8B0-D5E3D00187BD}|http">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Services/AppEntities/OrderService.cs">
+  <MonoDevelop.Ide.ItemProperties.src.OnlinePayment-Iyzico FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Context/AppDbContext.cs">
     <Files>
-      <File FileName="Persistence/Services/AppEntities/OrderService.cs" Line="53" Column="440" />
+      <File FileName="Persistence/Context/AppDbContext.cs" Line="31" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,46 +10,29 @@
           <Node name="EticaretServer" expanded="True">
             <Node name="src" expanded="True">
               <Node name="Core" expanded="True">
-                <Node name="Application" expanded="True">
-                  <Node name="Features" expanded="True">
-                    <Node name="AppEntities" expanded="True">
-                      <Node name="OrderFeatures" expanded="True">
-                        <Node name="Queries" expanded="True">
-                          <Node name="GetOrdersByUserId" expanded="True" />
-                        </Node>
-                      </Node>
-                    </Node>
-                  </Node>
-                </Node>
                 <Node name="Domain" expanded="True" />
               </Node>
               <Node name="External" expanded="True">
+                <Node name="Infrastructure" expanded="True" />
                 <Node name="Persistence" expanded="True">
-                  <Node name="Services" expanded="True">
-                    <Node name="AppEntities" expanded="True">
-                      <Node name="OrderService.cs" selected="True" />
-                    </Node>
-                  </Node>
-                  <Node name="UnitOfWorks" expanded="True" />
+                  <Node name="Migrations" expanded="True" />
                 </Node>
               </Node>
-              <Node name="EticaretWebApi" expanded="True">
-                <Node name="Controllers" expanded="True" />
-              </Node>
+              <Node name="OnlinePayment-Iyzico" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" relfile="src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" line="18" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

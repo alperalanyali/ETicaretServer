@@ -26,6 +26,7 @@
     <None Remove="Repositories\AppEntities\QuantityRepository\" />
     <None Remove="Repositories\AppEntities\ProductCategoryRepository\" />
     <None Remove="Dtos\" />
+    <None Remove="Repositories\AppEntities\IyzicoSettingRepository\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
@@ -49,5 +50,6 @@
     <Folder Include="Repositories\AppEntities\QuantityRepository\" />
     <Folder Include="Repositories\AppEntities\ProductCategoryRepository\" />
     <Folder Include="Dtos\" />
+    <Folder Include="Repositories\AppEntities\IyzicoSettingRepository\" />
   </ItemGroup>
 </Project>

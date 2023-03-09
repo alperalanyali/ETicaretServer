@@ -100,6 +100,11 @@
     <None Remove="Features\AppEntities\BasketItemFeatures\Commands\DeleteBasketItemByBasketId\" />
     <None Remove="Features\AppEntities\OrderItemFeatures\Commands\CreateOrderItems\" />
     <None Remove="Features\AppEntities\OrderFeatures\Queries\GetOrdersByUserId\" />
+    <None Remove="Features\AppEntities\IyzicoSettingFeatures\" />
+    <None Remove="Features\AppEntities\IyzicoSettingFeatures\Commands\" />
+    <None Remove="Features\AppEntities\IyzicoSettingFeatures\Queries\" />
+    <None Remove="Features\AppEntities\IyzicoSettingFeatures\Commands\UpdateIyzicoSetting\" />
+    <None Remove="Features\AppEntities\IyzicoSettingFeatures\Queries\GetFirstIyzicoSetting\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -193,6 +198,11 @@
     <Folder Include="Features\AppEntities\BasketItemFeatures\Commands\DeleteBasketItemByBasketId\" />
     <Folder Include="Features\AppEntities\OrderItemFeatures\Commands\CreateOrderItems\" />
     <Folder Include="Features\AppEntities\OrderFeatures\Queries\GetOrdersByUserId\" />
+    <Folder Include="Features\AppEntities\IyzicoSettingFeatures\" />
+    <Folder Include="Features\AppEntities\IyzicoSettingFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\IyzicoSettingFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\IyzicoSettingFeatures\Commands\UpdateIyzicoSetting\" />
+    <Folder Include="Features\AppEntities\IyzicoSettingFeatures\Queries\GetFirstIyzicoSetting\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.0" />

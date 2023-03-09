@@ -12,6 +12,7 @@
           "Domain": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.3",
           "Newtonsoft.Json": "13.0.2",
+          "OnlinePayment-Iyzico": "1.0.0",
           "Persistence": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -50,6 +51,17 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.6.0.0",
             "fileVersion": "1.600.22.20503"
+          }
+        }
+      },
+      "Iyzipay/2.1.55": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Iyzipay.dll": {
+            "assemblyVersion": "2.1.55.0",
+            "fileVersion": "2.1.55.0"
           }
         }
       },
@@ -873,6 +885,16 @@
           "Domain.dll": {}
         }
       },
+      "OnlinePayment-Iyzico/1.0.0": {
+        "dependencies": {
+          "Application": "1.0.0",
+          "Domain": "1.0.0",
+          "Iyzipay": "2.1.55"
+        },
+        "runtime": {
+          "OnlinePayment-Iyzico.dll": {}
+        }
+      },
       "Persistence/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
@@ -907,6 +929,13 @@
       "sha512": "sha512-EycyMsb6rD2PK9P0SyibFfEhvWWttdrYhyPF4f41uzdB/44yQlV+2Wehxyg489Rj6gbPvSPgbKq0xsHJBhipZA==",
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
+    },
+    "Iyzipay/2.1.55": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w4UwGNahHAWBv12RK5qIwSiDcmV84bWzBsGJ7Gp2+T1OqFjF6ugQTWamMWIkfCogznd3xO1ftzST8aK9ou5Ypg==",
+      "path": "iyzipay/2.1.55",
+      "hashPath": "iyzipay.2.1.55.nupkg.sha512"
     },
     "MediatR/12.0.0": {
       "type": "package",
@@ -1586,6 +1615,11 @@
       "sha512": ""
     },
     "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlinePayment-Iyzico/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

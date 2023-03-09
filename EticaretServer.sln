@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\Infra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{3524130B-E920-460F-9B13-D7E9C0C844FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlinePayment-Iyzico", "src\OnlinePayment-Iyzico\OnlinePayment-Iyzico.csproj", "{567D2CC1-144D-4254-B67B-50170310A231}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{3524130B-E920-460F-9B13-D7E9C0C844FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3524130B-E920-460F-9B13-D7E9C0C844FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3524130B-E920-460F-9B13-D7E9C0C844FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{567D2CC1-144D-4254-B67B-50170310A231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567D2CC1-144D-4254-B67B-50170310A231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567D2CC1-144D-4254-B67B-50170310A231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567D2CC1-144D-4254-B67B-50170310A231}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,5 +72,6 @@ Global
 		{8E7DD506-9826-48BD-A78C-E3894C983FE4} = {0E45CA89-E956-4536-8AA0-FB34955D5A3C}
 		{E969DD19-814E-47B7-A613-B005C6CE75B7} = {65DB6B4C-D6EA-40BF-AC6F-637911ECF339}
 		{3524130B-E920-460F-9B13-D7E9C0C844FF} = {65DB6B4C-D6EA-40BF-AC6F-637911ECF339}
+		{567D2CC1-144D-4254-B67B-50170310A231} = {B90CA372-9249-42EA-9469-27C2B94EBA5E}
 	EndGlobalSection
 EndGlobal
