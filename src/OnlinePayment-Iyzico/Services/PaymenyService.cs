@@ -4,8 +4,7 @@ using Domain.Dtos;
 using Iyzipay;
 using Iyzipay.Model;
 using Iyzipay.Request;
-using OnlinePayment_Iyzico.Abstract;
-using OnlinePayment_Iyzico.Dto;
+
 
 namespace OnlinePayment_Iyzico.Services
 {

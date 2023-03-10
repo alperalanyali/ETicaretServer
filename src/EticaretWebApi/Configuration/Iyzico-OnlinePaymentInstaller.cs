@@ -1,6 +1,7 @@
 ﻿using System;
+using Application.Services;
 using OnlineMuhasebeServer.Webapi.Configurations;
-using OnlinePayment_Iyzico.Abstract;
+
 using OnlinePayment_Iyzico.Services;
 
 namespace EticaretWebApi.Configuration

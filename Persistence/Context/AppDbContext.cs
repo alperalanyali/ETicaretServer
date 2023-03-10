@@ -29,6 +29,8 @@ namespace Persistence.Context
 		public DbSet<QuantityType> QuantityTypes { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<IyzicoSetting> IyzicoSettings { get; set; }
+        public DbSet<Store> Stores { get; set; }
+        public DbSet<ProductStore> ProductStores { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

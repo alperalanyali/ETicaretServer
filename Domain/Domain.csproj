@@ -27,6 +27,8 @@
     <None Remove="Repositories\AppEntities\ProductCategoryRepository\" />
     <None Remove="Dtos\" />
     <None Remove="Repositories\AppEntities\IyzicoSettingRepository\" />
+    <None Remove="Repositories\AppEntities\StoreRepository\" />
+    <None Remove="Repositories\AppEntities\ProductStoreRepository\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
@@ -51,5 +53,7 @@
     <Folder Include="Repositories\AppEntities\ProductCategoryRepository\" />
     <Folder Include="Dtos\" />
     <Folder Include="Repositories\AppEntities\IyzicoSettingRepository\" />
+    <Folder Include="Repositories\AppEntities\StoreRepository\" />
+    <Folder Include="Repositories\AppEntities\ProductStoreRepository\" />
   </ItemGroup>
 </Project>

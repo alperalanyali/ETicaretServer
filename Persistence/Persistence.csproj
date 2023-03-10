@@ -31,6 +31,8 @@
     <None Remove="Services\AppEntities\" />
     <None Remove="Repositories\AppEntities\ProductCategoryRepository\" />
     <None Remove="Repositories\AppEntities\IyzicoSettingRepository\" />
+    <None Remove="Repositories\AppEntities\StoreRepository\" />
+    <None Remove="Repositories\AppEntities\ProductStore\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
@@ -65,6 +67,8 @@
     <Folder Include="Services\AppEntities\" />
     <Folder Include="Repositories\AppEntities\ProductCategoryRepository\" />
     <Folder Include="Repositories\AppEntities\IyzicoSettingRepository\" />
+    <Folder Include="Repositories\AppEntities\StoreRepository\" />
+    <Folder Include="Repositories\AppEntities\ProductStoreRepository\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

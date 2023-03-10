@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.Services;
 using Domain.Dtos;
 using EticaretWebApi.Abstractions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using OnlinePayment_Iyzico.Abstract;
+
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

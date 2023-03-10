@@ -41,7 +41,7 @@ namespace Domain.Entities
 		public string  ZipCode { get; set; }
 		public string UserId { get; set; }
 
-		public ICollection<Product> Products { get; set; }
+		
 
 	}
 }

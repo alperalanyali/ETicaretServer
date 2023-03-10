@@ -9,10 +9,11 @@ namespace Application.Features.AppEntities.ProductFeatures.Commands.CreateProduc
     public class CreateProductCommandHandler : ICommandHandler<CreateProductCommand, CreateProductCommandResponse>
     {
         private readonly IProductService _productService;
-
-        public CreateProductCommandHandler(IProductService productService)
+        private readonly IProductStore _productStore;
+        public CreateProductCommandHandler(IProductService productService, IProductStore productStore)
         {
             _productService = productService;
+            _productStore = productStore;
         }
 
         public async Task<CreateProductCommandResponse> Handle(CreateProductCommand request, CancellationToken cancellationToken)
@@ -25,7 +26,11 @@ namespace Application.Features.AppEntities.ProductFeatures.Commands.CreateProduc
             var imageUrl = $"{stringFileName}";
             var product = new Product(request.Name, request.Code, quantityTypeId, imageUrl,request.Description, request.Price);
             await _productService.Create(product, cancellationToken);
-            return new();
+
+            var productStore = new ProductStore(product.Id.ToString(), request.StoreId, request.Price, false);
+            await _productStore.CreateAsync(productStore, cancellationToken);
+            
+            return new(product.Id.ToString(), "Ürün başarılı şekilde sisteme eklenmiştir");
         }
     }
 }

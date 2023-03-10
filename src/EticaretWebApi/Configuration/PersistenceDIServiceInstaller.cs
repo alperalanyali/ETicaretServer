@@ -10,7 +10,9 @@ using Domain.Repositories.AppEntities.OrderRepository;
 using Domain.Repositories.AppEntities.PaymentTypeRepository;
 using Domain.Repositories.AppEntities.ProductCategoryRepository;
 using Domain.Repositories.AppEntities.ProductRepository;
+using Domain.Repositories.AppEntities.ProductStoreRepository;
 using Domain.Repositories.AppEntities.QuantityRepository;
+using Domain.Repositories.AppEntities.StoreRepository;
 using Domain.UnitOfWork;
 using OnlineMuhasebeServer.Webapi.Configurations;
 using Persistence.Repositories.AppEntities.AddressesRepository;
@@ -23,7 +25,9 @@ using Persistence.Repositories.AppEntities.OrderRepository;
 using Persistence.Repositories.AppEntities.PaymentTypeRepository;
 using Persistence.Repositories.AppEntities.ProductCategoryRepository;
 using Persistence.Repositories.AppEntities.ProductRepository;
+using Persistence.Repositories.AppEntities.ProductStoreRepository;
 using Persistence.Repositories.AppEntities.QuantityTypeRepository;
+using Persistence.Repositories.AppEntities.StoreRepository;
 using Persistence.Services.AppEntities;
 using Persistence.UnitOfWorks;
 
@@ -49,6 +53,8 @@ namespace EticaretWebApi.Configuration
             services.AddScoped<IQuantityTypeService, QuantityTypeService>();
             services.AddScoped<IProductCategoryService, ProductCategoryService>();
             services.AddScoped<IIyzicoSettingsService, IyzicoSettingService>();
+            services.AddScoped<IStoreService, StoreService>();
+            services.AddScoped<IProductStore, ProductStoreService>();
             #endregion
 
             #region Repositories
@@ -74,6 +80,11 @@ namespace EticaretWebApi.Configuration
             services.AddScoped<IQuantityTypeQueryRepository, QuantityTypeQueryRepository>();
             services.AddScoped<IIyzicoSettingCommandRepository, IyzicoSettingCommandRepository>();
             services.AddScoped<IIyzicoSettingQueryRepository, IyzicoSettingQueryRepository>();
+            services.AddScoped<IStoreCommandRepository, StoreCommandRepository>();
+            services.AddScoped<IStoreQueryRepository, StoreQueryRepository>();
+            services.AddScoped<IProductStoreCommandRepository, ProductStoreCommandRepository>();
+            services.AddScoped<IProductStoreQueryRepository, ProductStoreQueryRepository>();
+
             #endregion
         }
     }

@@ -10,7 +10,8 @@ namespace Application.Features.AppEntities.ProductFeatures.Commands.CreateProduc
 		string QuantityTypeId,
 		IFormFile ImageUrl,
 		string Description,
-		decimal Price		
+		decimal Price,
+		string StoreId
 		):ICommand<CreateProductCommandResponse>;
 	
 }

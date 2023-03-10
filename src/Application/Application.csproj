@@ -105,6 +105,21 @@
     <None Remove="Features\AppEntities\IyzicoSettingFeatures\Queries\" />
     <None Remove="Features\AppEntities\IyzicoSettingFeatures\Commands\UpdateIyzicoSetting\" />
     <None Remove="Features\AppEntities\IyzicoSettingFeatures\Queries\GetFirstIyzicoSetting\" />
+    <None Remove="Features\AppEntities\StoreFeatures\" />
+    <None Remove="Features\AppEntities\StoreFeatures\Commands\" />
+    <None Remove="Features\AppEntities\StoreFeatures\Queries\" />
+    <None Remove="Features\AppEntities\StoreFeatures\Commands\CreateStore\" />
+    <None Remove="Features\AppEntities\StoreFeatures\Commands\UpdateStore\" />
+    <None Remove="Features\AppEntities\StoreFeatures\Queries\GetAll\" />
+    <None Remove="Features\AppEntities\ProductStoreFeatures\" />
+    <None Remove="Features\AppEntities\ProductStoreFeatures\Commands\" />
+    <None Remove="Features\AppEntities\ProductStoreFeatures\Queries\" />
+    <None Remove="Features\AppEntities\ProductStoreFeatures\Commands\CreateProductStore\" />
+    <None Remove="Features\AppEntities\ProductStoreFeatures\Commands\UpdateProductStore\" />
+    <None Remove="Features\AppEntities\ProductStoreFeatures\Commands\DeleteProductStore\" />
+    <None Remove="Features\AppEntities\ProductStoreFeatures\Queries\GetAllProductStore\" />
+    <None Remove="Features\AppEntities\ProductStoreFeatures\Queries\GetProductStoreByProductId\" />
+    <None Remove="Features\AppEntities\ProductStoreFeatures\Queries\GetProductStoreByCategoryId\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -203,6 +218,21 @@
     <Folder Include="Features\AppEntities\IyzicoSettingFeatures\Queries\" />
     <Folder Include="Features\AppEntities\IyzicoSettingFeatures\Commands\UpdateIyzicoSetting\" />
     <Folder Include="Features\AppEntities\IyzicoSettingFeatures\Queries\GetFirstIyzicoSetting\" />
+    <Folder Include="Features\AppEntities\StoreFeatures\" />
+    <Folder Include="Features\AppEntities\StoreFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\StoreFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\StoreFeatures\Commands\CreateStore\" />
+    <Folder Include="Features\AppEntities\StoreFeatures\Commands\UpdateStore\" />
+    <Folder Include="Features\AppEntities\StoreFeatures\Queries\GetAll\" />
+    <Folder Include="Features\AppEntities\ProductStoreFeatures\" />
+    <Folder Include="Features\AppEntities\ProductStoreFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\ProductStoreFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\ProductStoreFeatures\Commands\CreateProductStore\" />
+    <Folder Include="Features\AppEntities\ProductStoreFeatures\Commands\UpdateProductStore\" />
+    <Folder Include="Features\AppEntities\ProductStoreFeatures\Commands\DeleteProductStore\" />
+    <Folder Include="Features\AppEntities\ProductStoreFeatures\Queries\GetAllProductStore\" />
+    <Folder Include="Features\AppEntities\ProductStoreFeatures\Queries\GetProductStoreByProductId\" />
+    <Folder Include="Features\AppEntities\ProductStoreFeatures\Queries\GetProductStoreByCategoryId\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.0" />

@@ -84,6 +84,13 @@
 /Users/alperalanyali/Desktop/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.pdb
 /Users/alperalanyali/Desktop/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.genruntimeconfig.cache
 /Users/alperalanyali/Desktop/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/ref/EticaretWebApi.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.csproj.AssemblyReference.cache
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.AssemblyInfoInputs.cache
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.AssemblyInfo.cs
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.csproj.CoreCompileInputs.cache
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.MvcApplicationPartsAssemblyInfo.cs
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.MvcApplicationPartsAssemblyInfo.cache
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/appsettings.Development.json
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/appsettings.json
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/EticaretWebApi
@@ -93,6 +100,7 @@
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/EticaretWebApi.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Azure.Core.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Azure.Identity.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Iyzipay.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/MediatR.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/MediatR.Contracts.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
@@ -120,6 +128,7 @@
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Microsoft.OpenApi.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Newtonsoft.Json.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -145,17 +154,12 @@
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Application.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Domain.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/OnlinePayment-Iyzico.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Persistence.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Application.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Persistence.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Domain.pdb
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.csproj.AssemblyReference.cache
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.GeneratedMSBuildEditorConfig.editorconfig
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.AssemblyInfoInputs.cache
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.AssemblyInfo.cs
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.csproj.CoreCompileInputs.cache
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.MvcApplicationPartsAssemblyInfo.cs
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.MvcApplicationPartsAssemblyInfo.cache
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/OnlinePayment-Iyzico.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/staticwebassets/msbuild.EticaretWebApi.Microsoft.AspNetCore.StaticWebAssets.props
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/staticwebassets/msbuild.build.EticaretWebApi.props
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.EticaretWebApi.props
@@ -170,7 +174,3 @@
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.genruntimeconfig.cache
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/ref/EticaretWebApi.dll
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Newtonsoft.Json.dll
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Iyzipay.dll
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/OnlinePayment-Iyzico.dll
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/OnlinePayment-Iyzico.pdb

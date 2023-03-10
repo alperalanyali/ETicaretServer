@@ -9,13 +9,9 @@
 
   <ItemGroup>
     <None Remove="Services\" />
-    <None Remove="Abstract\" />
-    <None Remove="Dto\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
-    <Folder Include="Abstract\" />
-    <Folder Include="Dto\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
