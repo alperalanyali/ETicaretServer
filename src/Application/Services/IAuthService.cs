@@ -10,6 +10,9 @@ namespace Application.Services
 		Task<IdentityResult> CreateUser(CreateUserCommand request, CancellationToken cancellationToken);
         Task<AppUser> GetByEmailOrUsernameAsync(string emailOrUsername);
         Task<bool> CheckPasswordAsync(AppUser user, string password);
+        Task Update(AppUser user, CancellationToken cancellationToken);
+        Task<AppUser> GetById(string Id);
+        Task RefreshPassword(string id, string password);
     }
 }
 

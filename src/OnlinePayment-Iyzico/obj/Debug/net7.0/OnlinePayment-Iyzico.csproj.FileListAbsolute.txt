@@ -15,3 +15,5 @@
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/obj/Debug/net7.0/refint/OnlinePayment-Iyzico.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/obj/Debug/net7.0/OnlinePayment-Iyzico.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/obj/Debug/net7.0/ref/OnlinePayment-Iyzico.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/bin/Debug/net7.0/Infrastructure.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/bin/Debug/net7.0/Infrastructure.pdb

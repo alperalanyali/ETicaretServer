@@ -10,10 +10,10 @@ namespace Domain.Entities
         {
 
         }
-        public OrderItem(Guid orderId,Guid productId,decimal quantity,decimal totalPrice)
+        public OrderItem(Guid orderId,Guid productStoreId,decimal quantity,decimal totalPrice)
         {
             OrderId = orderId;
-            ProductId = productId;
+            ProductStoreId = productStoreId;
             Quantity = quantity;
             TotalPrice = totalPrice;
         }
@@ -23,9 +23,9 @@ namespace Domain.Entities
         public Guid OrderId { get; set; }
         //public Order Order { get; set; }
 
-        [ForeignKey("Products")]
-        public Guid ProductId { get; set; }
-        public Product Product { get; set; }
+        [ForeignKey("ProductStores")]
+        public Guid ProductStoreId { get; set; }
+        public ProductStore ProductStore { get; set; }
         public decimal Quantity { get; set; }
         public decimal TotalPrice { get; set; }
     }

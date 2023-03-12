@@ -17,7 +17,7 @@ namespace Application.Features.AppEntities.BasketItemFeatures.Commands.UpdateBas
         public async Task<UpdateBasketItemCommandResponse> Handle(UpdateBasketItemCommand request, CancellationToken cancellationToken)
         {
             var basketItem =await _basketItemService.GetById(request.Id);
-            basketItem.ProductId = request.ProductId;
+            basketItem.ProductStoreId = request.ProductStoreId;
             basketItem.Quantity = request.Quantity;
             basketItem.TotalPrice = request.TotalPrice;
             basketItem.BasketId = request.BasketId;

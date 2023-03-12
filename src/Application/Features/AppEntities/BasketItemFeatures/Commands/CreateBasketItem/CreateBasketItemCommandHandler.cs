@@ -14,7 +14,7 @@ namespace Application.Features.AppEntities.BasketItemFeatures.Commands.CreateBas
         }
         public async Task<CreateBasketItemCommandResponse> Handle(CreateBasketItemCommand request, CancellationToken cancellationToken)
         {
-            var basketItem = new BasketItem(request.BasketId, request.ProductId, request.Quantity, request.TotalPrice);
+            var basketItem = new BasketItem(request.BasketId, request.ProductStoreId, request.Quantity, request.TotalPrice);
             await _basketItemService.Create(basketItem, cancellationToken);
 
             return new();

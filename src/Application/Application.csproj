@@ -120,6 +120,18 @@
     <None Remove="Features\AppEntities\ProductStoreFeatures\Queries\GetAllProductStore\" />
     <None Remove="Features\AppEntities\ProductStoreFeatures\Queries\GetProductStoreByProductId\" />
     <None Remove="Features\AppEntities\ProductStoreFeatures\Queries\GetProductStoreByCategoryId\" />
+    <None Remove="Features\AppEntities\RoleFeatures\" />
+    <None Remove="Features\AppEntities\RoleFeatures\Queries\" />
+    <None Remove="Features\AppEntities\RoleFeatures\Queries\GetAllRole\" />
+    <None Remove="Features\AppEntities\ECommercePaymentFeatures\" />
+    <None Remove="Features\AppEntities\ECommercePaymentFeatures\Commands\" />
+    <None Remove="Features\AppEntities\ECommercePaymentFeatures\Queries\" />
+    <None Remove="Features\AppEntities\ECommercePaymentFeatures\Commands\UpdateECommercePayment\" />
+    <None Remove="Features\AppEntities\EmailFeatures\" />
+    <None Remove="Features\AppEntities\EmailFeatures\Commands\" />
+    <None Remove="Features\AppEntities\EmailFeatures\Commands\TesEmail\" />
+    <None Remove="Features\AppEntities\AuthFeatures\Commands\ForgotPassword\" />
+    <None Remove="Features\AppEntities\AuthFeatures\Commands\RefreshPassword\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -233,12 +245,26 @@
     <Folder Include="Features\AppEntities\ProductStoreFeatures\Queries\GetAllProductStore\" />
     <Folder Include="Features\AppEntities\ProductStoreFeatures\Queries\GetProductStoreByProductId\" />
     <Folder Include="Features\AppEntities\ProductStoreFeatures\Queries\GetProductStoreByCategoryId\" />
+    <Folder Include="Features\AppEntities\RoleFeatures\" />
+    <Folder Include="Features\AppEntities\RoleFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\RoleFeatures\Queries\GetAllRole\" />
+    <Folder Include="Features\AppEntities\ECommercePaymentFeatures\" />
+    <Folder Include="Features\AppEntities\ECommercePaymentFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\ECommercePaymentFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\ECommercePaymentFeatures\Commands\UpdateECommercePayment\" />
+    <Folder Include="Features\AppEntities\EmailFeatures\" />
+    <Folder Include="Features\AppEntities\EmailFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\EmailFeatures\Commands\TesEmail\" />
+    <Folder Include="Features\AppEntities\AuthFeatures\Commands\ForgotPassword\" />
+    <Folder Include="Features\AppEntities\AuthFeatures\Commands\RefreshPassword\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="SendGrid" Version="9.28.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 </Project>

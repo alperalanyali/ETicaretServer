@@ -5,7 +5,7 @@ namespace Application.Features.AppEntities.BasketItemFeatures.Commands.UpdateBas
 {
 	public sealed record UpdateBasketItemCommand(
 			string Id,
-			Guid ProductId,
+			Guid ProductStoreId,
 			Guid BasketId,
 			decimal Quantity,
 			decimal TotalPrice

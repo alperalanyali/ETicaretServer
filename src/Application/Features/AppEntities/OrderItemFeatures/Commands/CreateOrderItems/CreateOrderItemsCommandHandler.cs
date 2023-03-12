@@ -20,7 +20,7 @@ namespace Application.Features.AppEntities.OrderItemFeatures.Commands.CreateOrde
 
             foreach (var basketItem in request.BasketItems)
             {
-                var orderItem = new OrderItem(request.OrderId, basketItem.ProductId, basketItem.Quantity, basketItem.TotalPrice);
+                var orderItem = new OrderItem(request.OrderId, basketItem.ProductStoreId, basketItem.Quantity, basketItem.TotalPrice);
                 orderItems.Add(orderItem);
             }
 

@@ -31,6 +31,7 @@ namespace Persistence.Context
         public DbSet<IyzicoSetting> IyzicoSettings { get; set; }
         public DbSet<Store> Stores { get; set; }
         public DbSet<ProductStore> ProductStores { get; set; }
+        public DbSet<ECommercePayment> ECommercePayments { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

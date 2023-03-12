@@ -25,12 +25,15 @@ namespace Persistence.Services.AppEntities
         {
             var user = await _userManager.CreateAsync(new AppUser()
             {
+                Id = Guid.NewGuid(),
                 UserName = request.Username,
                 Email = request.Email,
                 FullName = request.FullName,
-                Id = Guid.NewGuid()                
+                //StoreId = new Guid(request.StoreId),
+                RoleId = new Guid(request.RoleId),
+                RefreshToken = "112313"
 
-            }, request.Password);
+            }, request.Password) ;
 
             return user;
         }
@@ -39,6 +42,25 @@ namespace Persistence.Services.AppEntities
         {
             var user = await _userManager.Users.Where(u => u.Email == emailOrUsername || u.UserName == emailOrUsername).FirstOrDefaultAsync();
             return user;
+        }
+
+        public async Task<AppUser> GetById(string Id)
+        {
+            var user = await _userManager.FindByIdAsync(Id);
+            return user;
+ 
+        }
+
+        public async Task RefreshPassword(string id, string password)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, password);
+            var result = await _userManager.UpdateAsync(user);
+        }
+
+        public async Task Update(AppUser user, CancellationToken cancellationToken)
+        {
+            await _userManager.UpdateAsync(user);
         }
     }
 }

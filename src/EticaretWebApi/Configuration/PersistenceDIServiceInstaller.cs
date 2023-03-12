@@ -4,6 +4,7 @@ using Domain.Repositories.AppEntities.AddressRepository;
 using Domain.Repositories.AppEntities.BasketItemRepository;
 using Domain.Repositories.AppEntities.BasketRepository;
 using Domain.Repositories.AppEntities.CategoryRepository;
+using Domain.Repositories.AppEntities.ECommercePayments;
 using Domain.Repositories.AppEntities.IyzicoSettingRepository;
 using Domain.Repositories.AppEntities.OrderItemRepository;
 using Domain.Repositories.AppEntities.OrderRepository;
@@ -19,6 +20,7 @@ using Persistence.Repositories.AppEntities.AddressesRepository;
 using Persistence.Repositories.AppEntities.BasketItemRepository;
 using Persistence.Repositories.AppEntities.BasketRepository;
 using Persistence.Repositories.AppEntities.CategoryRepository;
+using Persistence.Repositories.AppEntities.ECommercePaymentsRepository;
 using Persistence.Repositories.AppEntities.IyzicoSettingRepository;
 using Persistence.Repositories.AppEntities.OrderItemRepository;
 using Persistence.Repositories.AppEntities.OrderRepository;
@@ -55,6 +57,7 @@ namespace EticaretWebApi.Configuration
             services.AddScoped<IIyzicoSettingsService, IyzicoSettingService>();
             services.AddScoped<IStoreService, StoreService>();
             services.AddScoped<IProductStore, ProductStoreService>();
+            services.AddScoped<IECommercePaymentService, ECommercePaymentService>();
             #endregion
 
             #region Repositories
@@ -84,6 +87,8 @@ namespace EticaretWebApi.Configuration
             services.AddScoped<IStoreQueryRepository, StoreQueryRepository>();
             services.AddScoped<IProductStoreCommandRepository, ProductStoreCommandRepository>();
             services.AddScoped<IProductStoreQueryRepository, ProductStoreQueryRepository>();
+            services.AddScoped<IECommercePaymentsCommandRepository, ECommercePaymentCommandRepository>();
+            services.AddScoped<IECommercePaymentsQueryRepository, ECommercePaymentQueryRepository>();
 
             #endregion
         }

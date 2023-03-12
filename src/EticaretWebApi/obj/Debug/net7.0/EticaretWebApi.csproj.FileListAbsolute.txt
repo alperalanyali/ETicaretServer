@@ -84,13 +84,6 @@
 /Users/alperalanyali/Desktop/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.pdb
 /Users/alperalanyali/Desktop/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.genruntimeconfig.cache
 /Users/alperalanyali/Desktop/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/ref/EticaretWebApi.dll
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.csproj.AssemblyReference.cache
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.GeneratedMSBuildEditorConfig.editorconfig
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.AssemblyInfoInputs.cache
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.AssemblyInfo.cs
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.csproj.CoreCompileInputs.cache
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.MvcApplicationPartsAssemblyInfo.cs
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.MvcApplicationPartsAssemblyInfo.cache
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/appsettings.Development.json
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/appsettings.json
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/EticaretWebApi
@@ -160,6 +153,13 @@
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Persistence.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Domain.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/OnlinePayment-Iyzico.pdb
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.csproj.AssemblyReference.cache
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.AssemblyInfoInputs.cache
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.AssemblyInfo.cs
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.csproj.CoreCompileInputs.cache
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.MvcApplicationPartsAssemblyInfo.cs
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.MvcApplicationPartsAssemblyInfo.cache
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/staticwebassets/msbuild.EticaretWebApi.Microsoft.AspNetCore.StaticWebAssets.props
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/staticwebassets/msbuild.build.EticaretWebApi.props
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.EticaretWebApi.props
@@ -174,3 +174,7 @@
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/EticaretWebApi.genruntimeconfig.cache
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/obj/Debug/net7.0/ref/EticaretWebApi.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/SendGrid.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/StarkbankEcdsa.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Infrastructure.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/bin/Debug/net7.0/Infrastructure.pdb

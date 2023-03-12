@@ -11,10 +11,11 @@ namespace Domain.Entities
 
 		}
 
-		public BasketItem(Guid basketId,Guid productId,decimal quantity,decimal totalPrice)
+		public BasketItem(Guid basketId,Guid productStoreId, decimal quantity,decimal totalPrice)
 		{
+			Id = Guid.NewGuid();
 			BasketId = basketId;
-			ProductId = productId;
+            ProductStoreId = productStoreId;
 			Quantity = quantity;
 			TotalPrice = totalPrice;
 		}
@@ -23,9 +24,9 @@ namespace Domain.Entities
 		public Guid BasketId { get; set; }
 		//public Basket Basket { get; set; }
 
-		[ForeignKey("Products")]
-		public Guid ProductId { get; set; }
-		public Product Product { get; set; }
+		[ForeignKey("ProductStores")]
+		public Guid ProductStoreId { get; set; }
+		public ProductStore ProductStore { get; set; }
 		public decimal Quantity { get; set; }
 		public decimal TotalPrice { get; set; }
 	}

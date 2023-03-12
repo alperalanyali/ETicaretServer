@@ -6,7 +6,9 @@ namespace Application.Features.AppEntities.AuthFeatures.Commands.Login
 		string Message,
 		string Email,
 		Guid UserId,
-		string FullName
+		string FullName,
+		string RoleId,
+		string StoreId
 		);
 	
 }

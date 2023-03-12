@@ -1,11 +1,9 @@
 ﻿<Properties StartupConfiguration="{C42B0C7E-74A1-42B4-B8B0-D5E3D00187BD}|http">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandResponse.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Infrastructure/Services/EmailSenderService.cs">
     <Files>
-      <File FileName="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" Line="22" Column="1" />
-      <File FileName="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommand.cs" Line="14" Column="17" />
-      <File FileName="src/EticaretWebApi/Controllers/ProductController.cs" Line="36" Column="1" />
-      <File FileName="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandResponse.cs" Line="5" Column="15" />
+      <File FileName="src/Application/Features/AppEntities/ECommercePaymentFeatures/Commands/UpdateECommercePayment/UpdateECommercePaymentCommand.cs" Line="15" Column="15" />
+      <File FileName="src/Application/Features/AppEntities/ECommercePaymentFeatures/Commands/UpdateECommercePayment/UpdateECommerceCommandHandler.cs" Line="7" Column="15" />
+      <File FileName="src/Infrastructure/Services/EmailSenderService.cs" Line="11" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,41 +13,17 @@
               <Node name="Core" expanded="True">
                 <Node name="Application" expanded="True">
                   <Node name="Features" expanded="True">
-                    <Node name="AppEntities" expanded="True">
-                      <Node name="ProductFeatures" expanded="True">
-                        <Node name="Commands" expanded="True">
-                          <Node name="CreateProduct" expanded="True">
-                            <Node name="CreateProductCommandResponse.cs" selected="True" />
-                          </Node>
-                        </Node>
-                        <Node name="Queries" expanded="True">
-                          <Node name="GetProductById" expanded="True" />
-                          <Node name="GetProductsByCategoryId" expanded="True" />
-                        </Node>
-                      </Node>
-                      <Node name="ProductStoreFeatures" expanded="True">
-                        <Node name="Queries" expanded="True">
-                          <Node name="GetAllProductStore" expanded="True" />
-                          <Node name="GetProductStoreByCategoryId" expanded="True" />
-                        </Node>
-                      </Node>
-                    </Node>
-                  </Node>
-                  <Node name="Services" expanded="True" />
-                </Node>
-                <Node name="Domain" expanded="True" />
-              </Node>
-              <Node name="External" expanded="True">
-                <Node name="Persistence" expanded="True">
-                  <Node name="Context" expanded="True" />
-                  <Node name="Services" expanded="True">
                     <Node name="AppEntities" expanded="True" />
                   </Node>
                 </Node>
               </Node>
-              <Node name="EticaretWebApi" expanded="True">
-                <Node name="Configuration" expanded="True" />
-                <Node name="Controllers" expanded="True" />
+              <Node name="External" expanded="True">
+                <Node name="Infrastructure" expanded="True">
+                  <Node name="Services" expanded="True">
+                    <Node name="EmailSenderService.cs" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="Persistence" expanded="True" />
               </Node>
               <Node name="OnlinePayment-Iyzico" expanded="True">
                 <Node name="Services" expanded="True" />
@@ -58,18 +32,17 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" relfile="src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" line="18" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/Controllers/ProductStoreController.cs" relfile="src/EticaretWebApi/Controllers/ProductStoreController.cs" line="52" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

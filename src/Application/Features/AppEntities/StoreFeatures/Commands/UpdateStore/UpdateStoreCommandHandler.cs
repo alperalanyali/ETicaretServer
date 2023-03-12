@@ -17,16 +17,7 @@ namespace Application.Features.AppEntities.StoreFeatures.Commands.UpdateStore
         {
             var store = await _storeService.GetById(request.store.Id.ToString());
             store.StoreName = request.store.StoreName;
-            store.Name = request.store.Name;
-            store.Surname = request.store.Surname;
-            store.GsmNumber = request.store.GsmNumber;
-            store.RegistrationAddress = request.store.RegistrationAddress;
-            store.Email = request.store.Email;
-            store.IdentityNumber = request.store.IdentityNumber;
-            store.City = request.store.City;
-            store.Ip = request.store.Ip;
-            store.ZipCode = request.store.ZipCode;
-            store.UserId  = request.store.UserId;
+            store.Address = request.store.Address;
 
             await _storeService.UpdateAsync(store, cancellationToken);
 

@@ -16,7 +16,7 @@ namespace Application.Features.AppEntities.StoreFeatures.Commands.CreateStore
 
         public async Task<CreateStoreCommandResponse> Handle(CreateStoreCommand request, CancellationToken cancellationToken)
         {
-            var newStore = new Store(request.StoreName, request.Name, request.Surname, request.GsmNumber, request.Email, request.IdentityNumber, request.RegistrationAddress, request.Ip, request.City, request.Country, request.ZipCode, request.UserId);
+            var newStore = new Store(request.StoreName,request.Address);
             await _storeService.CreateAsync(newStore, cancellationToken);
 
             return new();

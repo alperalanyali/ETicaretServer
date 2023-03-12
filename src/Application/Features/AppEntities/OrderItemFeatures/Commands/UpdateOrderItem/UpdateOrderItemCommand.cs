@@ -5,7 +5,7 @@ namespace Application.Features.AppEntities.OrderItemFeatures.Commands.UpdateOrde
 {
 	public sealed record UpdateOrderItemCommand(
 			string Id,
-			Guid ProductId,
+			Guid ProductStoreId,
 			decimal Quantity,
 			decimal TotalPrice,
 			Guid OrderId

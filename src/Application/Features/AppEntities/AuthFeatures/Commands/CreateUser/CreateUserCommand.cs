@@ -7,7 +7,9 @@ namespace Application.Features.AppEntities.AuthFeatures.Commands.CreateUser
 		string Username,
 		string Email,
 		string FullName,
-		string Password
+		string Password,
+		string RoleId,
+		string StoreId
 		):ICommand<CreateUserCommandResponse>;
 	
 }

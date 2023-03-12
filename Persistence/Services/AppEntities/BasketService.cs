@@ -38,13 +38,13 @@ namespace Persistence.Services.AppEntities
 
         public async Task<Basket> GetBasketIdByUserId(string userId)
         {
-            var result = _basketQuery.GetWhere(p => p.UserId == new Guid(userId)).Include(p => p.BasketItems).ThenInclude(b => b.Product).ThenInclude(q => q.QuantityType).Include(b => b.BasketItems).ThenInclude(b => b.Product).ThenInclude(pc => pc.ProductCategories).ThenInclude(c => c.Category).OrderByDescending(p => p.CreatedDate).FirstOrDefaultAsync();
+            var result = _basketQuery.GetWhere(p => p.UserId == new Guid(userId)).Include(p => p.BasketItems).ThenInclude(b => b.ProductStore).ThenInclude(p => p.Product).ThenInclude(q => q.QuantityType).Include(b => b.BasketItems).ThenInclude(b => b.ProductStore).ThenInclude(p => p.Product).ThenInclude(pc => pc.ProductCategories).ThenInclude(c => c.Category).OrderByDescending(p => p.CreatedDate).FirstOrDefaultAsync();
             return await result ; 
         }
 
         public async Task<Basket> GetById(string id)
         {
-            var result = await _basketQuery.GetWhere(p => p.Id == new Guid(id)).Include(p => p.BasketItems).ThenInclude(b => b.Product).FirstOrDefaultAsync();
+            var result = await _basketQuery.GetWhere(p => p.Id == new Guid(id)).Include(p => p.BasketItems).ThenInclude(b => b.ProductStore).ThenInclude(p => p.Product).FirstOrDefaultAsync();
             return  result;
         }
 

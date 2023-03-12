@@ -16,7 +16,7 @@ namespace Application.Features.AppEntities.OrderItemFeatures.Commands.UpdateOrde
         public async Task<UpdateOrderItemCommandResponse> Handle(UpdateOrderItemCommand request, CancellationToken cancellationToken)
         {
             var orderItem = await _orderItemService.GetById(request.Id);
-            orderItem.ProductId = request.ProductId;
+            orderItem.ProductStoreId = request.ProductStoreId;
             orderItem.Quantity = request.Quantity;
             orderItem.TotalPrice = request.TotalPrice;
             orderItem.OrderId = request.OrderId;

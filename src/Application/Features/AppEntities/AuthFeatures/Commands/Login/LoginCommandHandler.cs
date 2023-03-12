@@ -34,7 +34,9 @@ namespace Application.Features.AppEntities.AuthFeatures.Commands.Login
                 Message:message,
                 Email:user.Email,
                 UserId:user.Id,
-                FullName:user.FullName
+                FullName:user.FullName,
+                RoleId: user.RoleId.ToString(),
+                StoreId: user.StoreId.ToString()
                 );
 
             return response;

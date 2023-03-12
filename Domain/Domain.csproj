@@ -29,6 +29,7 @@
     <None Remove="Repositories\AppEntities\IyzicoSettingRepository\" />
     <None Remove="Repositories\AppEntities\StoreRepository\" />
     <None Remove="Repositories\AppEntities\ProductStoreRepository\" />
+    <None Remove="Repositories\AppEntities\ECommercePayments\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
@@ -55,5 +56,6 @@
     <Folder Include="Repositories\AppEntities\IyzicoSettingRepository\" />
     <Folder Include="Repositories\AppEntities\StoreRepository\" />
     <Folder Include="Repositories\AppEntities\ProductStoreRepository\" />
+    <Folder Include="Repositories\AppEntities\ECommercePayments\" />
   </ItemGroup>
 </Project>

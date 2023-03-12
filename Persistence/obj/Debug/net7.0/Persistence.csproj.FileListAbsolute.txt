@@ -36,3 +36,5 @@
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/Persistence/obj/Debug/net7.0/Persistence.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/Persistence/obj/Debug/net7.0/Persistence.genruntimeconfig.cache
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/Persistence/obj/Debug/net7.0/ref/Persistence.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Persistence/bin/Debug/net7.0/Infrastructure.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Persistence/bin/Debug/net7.0/Infrastructure.pdb
