@@ -3,6 +3,35 @@ namespace Domain.Dtos
 {
 	public class PaymentAddressDto
     {
+        public PaymentAddressDto()
+        {
+
+        }
+
+        public PaymentAddressDto(string name,string surname,string gsmNumber,string email,string identityNumber,string ip,string city,string country,string zipCode,string userId,string cardHolderName,string cardNumber,string expireMonth,string expireYear,string cvc, decimal price, string basketId,string description,string registrationAddress)
+        {
+            Name = name;
+            Surname = surname;
+            GsmNumber = gsmNumber;
+            Email = email;
+            IdentityNumber = identityNumber;
+            Ip = ip;
+            City = city;
+            Country = country;
+            ZipCode = zipCode;
+            UserId = userId;
+            CardHolderName = cardHolderName;
+            CardNumber = cardNumber;
+            ExpireMonth = expireMonth;
+            ExpireYear = expireYear;
+            Cvc = cvc;
+            Price = price;
+            BasketId = basketId;
+            Description = description;
+            RegistrationAddress = registrationAddress;
+
+        }
+
         public string Name { get; set; }
         public string Surname { get; set; }
         public string GsmNumber { get; set; }

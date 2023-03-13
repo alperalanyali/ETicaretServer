@@ -11,12 +11,16 @@ namespace OnlinePayment_Iyzico.Services
 	public class PaymenyService:IPaymentService
 	{
 		private readonly IIyzicoSettingsService _iyzicoService;
-		public PaymenyService(IIyzicoSettingsService ıyzicoSettingsService)
+        
+
+		public PaymenyService(IIyzicoSettingsService ıyzicoSettingsService,IECommercePaymentService eCommercePaymentService)
 		{
 			_iyzicoService = ıyzicoSettingsService;
+
 		}
 		public async Task<PaymentResult> PaymentWithIyzico(PaymentAddressDto paymentAddressDto)
 		{
+            
 			var result = await _iyzicoService.GetFirstAsync();
 			Options options = new Options();
 			options.ApiKey = result.Api;
