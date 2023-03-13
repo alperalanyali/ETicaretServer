@@ -51,6 +51,13 @@ namespace Persistence.Services.AppEntities
  
         }
 
+        public async Task<AppUser> GetUserByCode(string code)
+        {
+            var user = await _userManager.Users.Where(u => u.MailConfirmCode == code).FirstOrDefaultAsync();
+
+            return user;
+        }
+
         public async Task RefreshPassword(string id, string password)
         {
             var user = await _userManager.FindByIdAsync(id);

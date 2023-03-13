@@ -10,7 +10,7 @@ namespace Infrastructure.Services
 	{
         public static async Task<bool> SendEmail(string subject,string htmlContent,List<EmailAddress> tos)
         {
-            var apiKey = "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"; //Environment.GetEnvironmentVariable("NAME_OF_THE_ENVIRONMENT_VARIABLE_FOR_YOUR_SENDGRID_KEY");
+            var apiKey = "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"; //Environment.GetEnvironmentVariable("NAME_OF_THE_ENVIRONMENT_VARIABLE_FOR_YOUR_SENDGRID_KEY");
             var client = new SendGridClient(apiKey);
             var from = new EmailAddress("alper_alanyali@hotmail.com", "E-Ticaret  Alper");
             //var subject = "Sending with SendGrid is Fun";

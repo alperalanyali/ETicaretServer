@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Application.Features.AppEntities.AuthFeatures.Commands.CreateUser;
 using Application.Features.AppEntities.AuthFeatures.Commands.ForgotPassword;
 using Application.Features.AppEntities.AuthFeatures.Commands.Login;
+using Application.Features.AppEntities.AuthFeatures.Commands.MailConfirm;
+using Application.Features.AppEntities.AuthFeatures.Commands.MailConfirmEmail;
 using Application.Features.AppEntities.AuthFeatures.Commands.RefreshPassword;
 using Application.Features.AppEntities.AuthFeatures.Queries.GetUserById;
 using EticaretWebApi.Abstractions;
@@ -57,6 +59,23 @@ namespace EticaretWebApi.Controllers
 
             return Ok(response);
         }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> SendConfirmEmail(SendMailConfirmCommand request)
+        {
+            var response = await _mediatR.Send(request);
+            return Ok(response);
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> ConfirmEMail(MailConfirmCommand request) {
+
+            var response = await _mediatR.Send(request);
+
+            return Ok(response);
+        }
+
+
     }
 }
 

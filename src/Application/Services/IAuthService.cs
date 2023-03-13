@@ -13,6 +13,7 @@ namespace Application.Services
         Task Update(AppUser user, CancellationToken cancellationToken);
         Task<AppUser> GetById(string Id);
         Task RefreshPassword(string id, string password);
+        Task<AppUser> GetUserByCode(string code);
     }
 }
 

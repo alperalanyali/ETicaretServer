@@ -132,6 +132,7 @@
     <None Remove="Features\AppEntities\EmailFeatures\Commands\TesEmail\" />
     <None Remove="Features\AppEntities\AuthFeatures\Commands\ForgotPassword\" />
     <None Remove="Features\AppEntities\AuthFeatures\Commands\RefreshPassword\" />
+    <None Remove="Features\AppEntities\AuthFeatures\Commands\MailConfirm\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -257,6 +258,8 @@
     <Folder Include="Features\AppEntities\EmailFeatures\Commands\TesEmail\" />
     <Folder Include="Features\AppEntities\AuthFeatures\Commands\ForgotPassword\" />
     <Folder Include="Features\AppEntities\AuthFeatures\Commands\RefreshPassword\" />
+    <Folder Include="Features\AppEntities\AuthFeatures\Commands\MailConfirmEmail\" />
+    <Folder Include="Features\AppEntities\AuthFeatures\Commands\MailConfirm\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.0" />

@@ -37,7 +37,7 @@ namespace Application.Features.AppEntities.AuthFeatures.Commands.ForgotPassword
                     <p>Aşağıdaki kodu size açılan sayfada ilgili alana girerek şifrenizi yenileyebilirsiniz! Eğer sayfayı kapattıysanız ya da açılmadıysa aşağıdaki <strong>'Sayfaya Git'</strong> linkini tıklayarak sayfaya ulaşabilirsiniz!</p>
                     <hr>
                     <h1>Kod: ${user.forgotPasswordCode}</h1>
-                    <a href='http://localhost:4200/forgot-password/"+user.Id+"/"+user.ForgotPasswordCode+@"'>Sayfaya Git</a>
+                    <a href='http://localhost:4200/forgotPassword/" + user.Id+"/"+user.ForgotPasswordCode+@"'>Sayfaya Git</a>
                     </div>
                 ";
             List<EmailAddress> tos= new List<EmailAddress>();
