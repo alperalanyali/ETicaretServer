@@ -23,7 +23,7 @@ namespace EticaretWebApi.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> Create(CreateProductStoreCommand request,CancellationToken cancellationToken)
+        public async Task<IActionResult> Create([FromForm]CreateProductStoreCommand request,CancellationToken cancellationToken)
         {
             var response = await _mediatR.Send(request,cancellationToken);
             return Ok(response);

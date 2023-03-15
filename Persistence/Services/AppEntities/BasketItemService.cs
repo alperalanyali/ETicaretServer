@@ -47,7 +47,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<BasketItem>> GetBasketItemByBasketId(string basketId)
         {
-            return await _basketItemQuery.GetWhere(p => p.BasketId == new Guid(basketId)).Include(p => p.ProductStore).ThenInclude(p => p.Product).ToListAsync();
+            return await _basketItemQuery.GetWhere(p => p.BasketId == new Guid(basketId)).Include(p => p.ProductStore)/*.ThenInclude(p => p.Product)*/.ToListAsync();
         }
 
         public async Task<BasketItem> GetById(string id)

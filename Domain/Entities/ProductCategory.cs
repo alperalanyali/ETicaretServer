@@ -11,14 +11,14 @@ namespace Domain.Entities
 
 		}
 
-		public ProductCategory(Guid productId,Guid categoryId)
+		public ProductCategory(Guid productStoreId,Guid categoryId)
 		{
 			Id = Guid.NewGuid();
-			ProductId = productId;
+            ProductStoreId = productStoreId;
 			CategoryId = categoryId;
 		}
 		//[ForeignKey("Product")]
-		public Guid ProductId { get; set; }
+		public Guid ProductStoreId { get; set; }
 		//public Product Product { get; set; }
 
 		[ForeignKey("Category")]

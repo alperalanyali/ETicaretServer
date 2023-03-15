@@ -133,6 +133,11 @@
     <None Remove="Features\AppEntities\AuthFeatures\Commands\ForgotPassword\" />
     <None Remove="Features\AppEntities\AuthFeatures\Commands\RefreshPassword\" />
     <None Remove="Features\AppEntities\AuthFeatures\Commands\MailConfirm\" />
+    <None Remove="Features\AppEntities\RoleFeatures\Queries\GetRoleById\" />
+    <None Remove="Features\AppEntities\UserFeatures\" />
+    <None Remove="Features\AppEntities\UserFeatures\Commands\" />
+    <None Remove="Features\AppEntities\UserFeatures\Queries\" />
+    <None Remove="Features\AppEntities\UserFeatures\Queries\GetAllUser\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -260,6 +265,12 @@
     <Folder Include="Features\AppEntities\AuthFeatures\Commands\RefreshPassword\" />
     <Folder Include="Features\AppEntities\AuthFeatures\Commands\MailConfirmEmail\" />
     <Folder Include="Features\AppEntities\AuthFeatures\Commands\MailConfirm\" />
+    <Folder Include="Features\AppEntities\RoleFeatures\" />
+    <Folder Include="Features\AppEntities\RoleFeatures\Queries\GetRoleById\" />
+    <Folder Include="Features\AppEntities\UserFeatures\" />
+    <Folder Include="Features\AppEntities\UserFeatures\Commands\" />
+    <Folder Include="Features\AppEntities\UserFeatures\Queries\" />
+    <Folder Include="Features\AppEntities\UserFeatures\Queries\GetAllUser\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.0" />

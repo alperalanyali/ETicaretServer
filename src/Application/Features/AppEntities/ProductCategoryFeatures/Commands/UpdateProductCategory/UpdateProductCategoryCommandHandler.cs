@@ -17,7 +17,7 @@ namespace Application.Features.AppEntities.ProductCategoryFeatures.Commands.Upda
         public async Task<UpdateProductCategoryCommandResponse> Handle(UpdateProductCategoryCommand request, CancellationToken cancellationToken)
         {
             var productCategory = await _productCatService.GetById(request.Id);
-            productCategory.ProductId = request.ProductId;
+            productCategory.ProductStoreId = request.ProductId;
             productCategory.CategoryId = request.CategoryId;
 
             await _productCatService.UpdateProductCategory(productCategory, cancellationToken);

@@ -12,7 +12,7 @@ namespace Application.Services
 		Task<OrderItem> GetById(string id);
 		Task<IList<OrderItem>> GetOrderItemByOrderId(string orderId);
 		Task AddRange(IList<OrderItem> orderItems, CancellationToken cancellationToken);
-	
+		Task<decimal> GetTotalPriceByOrderId(string orderId);
 	}
 }
 

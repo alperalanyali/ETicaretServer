@@ -505,7 +505,10 @@ namespace Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("ProductId")
+                    b.Property<Guid?>("ProductId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ProductStoreId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("UpdatedDate")
@@ -517,6 +520,8 @@ namespace Persistence.Migrations
 
                     b.HasIndex("ProductId");
 
+                    b.HasIndex("ProductStoreId");
+
                     b.ToTable("ProductCategories");
                 });
 
@@ -526,13 +531,29 @@ namespace Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<Guid>("ProductId")
+                    b.Property<Guid>("QuantityTypeId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("StoreId")
@@ -541,12 +562,9 @@ namespace Persistence.Migrations
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("UseProductPrice")
-                        .HasColumnType("bit");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("QuantityTypeId");
 
                     b.HasIndex("StoreId");
 
@@ -718,7 +736,11 @@ namespace Persistence.Migrations
 
                     b.HasOne("Domain.Entities.Product", null)
                         .WithMany("ProductCategories")
-                        .HasForeignKey("ProductId")
+                        .HasForeignKey("ProductId");
+
+                    b.HasOne("Domain.Entities.ProductStore", null)
+                        .WithMany("ProductCategories")
+                        .HasForeignKey("ProductStoreId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -727,9 +749,9 @@ namespace Persistence.Migrations
 
             modelBuilder.Entity("Domain.Entities.ProductStore", b =>
                 {
-                    b.HasOne("Domain.Entities.Product", "Product")
+                    b.HasOne("Domain.Entities.QuantityType", "QuantityType")
                         .WithMany()
-                        .HasForeignKey("ProductId")
+                        .HasForeignKey("QuantityTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -739,7 +761,7 @@ namespace Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Product");
+                    b.Navigation("QuantityType");
 
                     b.Navigation("Store");
                 });
@@ -760,6 +782,11 @@ namespace Persistence.Migrations
                 });
 
             modelBuilder.Entity("Domain.Entities.Product", b =>
+                {
+                    b.Navigation("ProductCategories");
+                });
+
+            modelBuilder.Entity("Domain.Entities.ProductStore", b =>
                 {
                     b.Navigation("ProductCategories");
                 });

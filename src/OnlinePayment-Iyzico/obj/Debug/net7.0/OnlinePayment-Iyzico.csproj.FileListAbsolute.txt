@@ -3,8 +3,10 @@
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/bin/Debug/net7.0/OnlinePayment-Iyzico.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/bin/Debug/net7.0/Application.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/bin/Debug/net7.0/Domain.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/bin/Debug/net7.0/Infrastructure.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/bin/Debug/net7.0/Application.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/bin/Debug/net7.0/Domain.pdb
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/bin/Debug/net7.0/Infrastructure.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/obj/Debug/net7.0/OnlinePayment-Iyzico.csproj.AssemblyReference.cache
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/obj/Debug/net7.0/OnlinePayment-Iyzico.GeneratedMSBuildEditorConfig.editorconfig
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/obj/Debug/net7.0/OnlinePayment-Iyzico.AssemblyInfoInputs.cache
@@ -15,5 +17,3 @@
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/obj/Debug/net7.0/refint/OnlinePayment-Iyzico.dll
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/obj/Debug/net7.0/OnlinePayment-Iyzico.pdb
 /Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/obj/Debug/net7.0/ref/OnlinePayment-Iyzico.dll
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/bin/Debug/net7.0/Infrastructure.dll
-/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/bin/Debug/net7.0/Infrastructure.pdb

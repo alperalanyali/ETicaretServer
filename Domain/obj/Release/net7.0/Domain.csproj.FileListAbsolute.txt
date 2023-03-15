@@ -1,0 +1,12 @@
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/bin/Release/net7.0/Domain.deps.json
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/bin/Release/net7.0/Domain.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/bin/Release/net7.0/Domain.pdb
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/obj/Release/net7.0/Domain.csproj.AssemblyReference.cache
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/obj/Release/net7.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/obj/Release/net7.0/Domain.AssemblyInfoInputs.cache
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/obj/Release/net7.0/Domain.AssemblyInfo.cs
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/obj/Release/net7.0/Domain.csproj.CoreCompileInputs.cache
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/obj/Release/net7.0/Domain.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/obj/Release/net7.0/refint/Domain.dll
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/obj/Release/net7.0/Domain.pdb
+/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Domain/obj/Release/net7.0/ref/Domain.dll

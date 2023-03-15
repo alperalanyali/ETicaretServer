@@ -53,6 +53,12 @@ namespace Persistence.Services.AppEntities
             return await _orderItemQuery.GetWhere(p => p.OrderId == new Guid(orderId)).Include("Product").ToListAsync();
         }
 
+        public async Task<decimal> GetTotalPriceByOrderId(string orderId)
+        {
+            var totalPrice = await _orderItemQuery.GetWhere(p => p.OrderId == new Guid(orderId)).SumAsync(p => p.TotalPrice);
+
+            return totalPrice;
+        }
 
         public async Task Update(OrderItem orderItem, CancellationToken cancellationToken)
         {

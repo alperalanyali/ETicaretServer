@@ -11,10 +11,9 @@ namespace Application.Features.AppEntities.ProductStoreFeatures.Commands.UpdateP
         public async Task<UpdateProductStoreCommandResponse> Handle(UpdateProductStoreCommand request, CancellationToken cancellationToken)
         {
             var productStore = await _productStoreService.GetById(request.Id);
-            productStore.ProductId = new Guid(request.ProductId);
+            //productStore.ProductId = new Guid(request.ProductId);
             productStore.StoreId = new Guid(request.StoreId);
-            productStore.Price = request.Price;
-            productStore.UseProductPrice = request.UseProductPrice;
+            productStore.Price = request.Price;            
             await _productStoreService.UpdateAsync(productStore, cancellationToken);
 
             return new();

@@ -31,12 +31,12 @@ namespace Application.Features.AppEntities.AuthFeatures.Commands.ForgotPassword
             user.ForgotPasswordCode = result.ToString();
 
             await _authService.Update(user,cancellationToken);
-            string html = @"
+            string html = $@"
               <div class=""container text-center"">
                     <h1>Şifrenizi Yenilemek için</h1>
                     <p>Aşağıdaki kodu size açılan sayfada ilgili alana girerek şifrenizi yenileyebilirsiniz! Eğer sayfayı kapattıysanız ya da açılmadıysa aşağıdaki <strong>'Sayfaya Git'</strong> linkini tıklayarak sayfaya ulaşabilirsiniz!</p>
                     <hr>
-                    <h1>Kod: ${user.forgotPasswordCode}</h1>
+                    <h1>Kod: {user.ForgotPasswordCode}</h1>
                     <a href='http://localhost:4200/forgotPassword/" + user.Id+"/"+user.ForgotPasswordCode+@"'>Sayfaya Git</a>
                     </div>
                 ";

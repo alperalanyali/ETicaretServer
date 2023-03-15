@@ -35,7 +35,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<ProductStore>> GetAll()
         {
-            var results = await _query.GetAll().Include(p=>p.Product).ThenInclude(p => p.ProductCategories).ThenInclude(p => p.Category).Include(p => p.Store).Include(p=>p.Product).ThenInclude(p => p.QuantityType).ToListAsync();
+            var results = await _query.GetAll().ToListAsync();
 
             return results;
         }
@@ -47,8 +47,10 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<ProductStore>> GetProductStoresByCategoryId(string categoryId)
         {
-            var results = await _query.GetWhere(p => p.Product.ProductCategories.Any(p => p.CategoryId == new Guid(categoryId))).Include(p => p.Product).ThenInclude(p => p.ProductCategories).Include(p=> p.Store).Include(p =>p.Product).ThenInclude(p =>p.ProductCategories).ThenInclude(p => p.Category).ToListAsync();
 
+            //var results = await _query.GetWhere(p => p.ProductCategories.Any(p => p.CategoryId == new Guid(categoryId))).Include(p=> p.Store).ToListAsync();
+
+            IList<ProductStore> results = new List<ProductStore>(); 
             return results;
         }
 

@@ -24,13 +24,13 @@ namespace Application.Features.AppEntities.ProductFeatures.Commands.CreateProduc
 
             var quantityTypeId = new Guid(request.QuantityTypeId);
             var imageUrl = $"{stringFileName}";
-            var product = new Product(request.Name, request.Code, quantityTypeId, imageUrl,request.Description, request.Price);
-            await _productService.Create(product, cancellationToken);
+            //var product = new Product(request.Name, request.Code, quantityTypeId, imageUrl,request.Description, request.Price);
+            //await _productService.Create(product, cancellationToken);
 
-            var productStore = new ProductStore(product.Id.ToString(), request.StoreId, request.Price, false);
-            await _productStore.CreateAsync(productStore, cancellationToken);
+            //var productStore = new ProductStore(request.Code,request.Name,request.Description,imageUrl,new Guid(request.QuantityTypeId), request.StoreId, request.Price);
+            //await _productStore.CreateAsync(productStore, cancellationToken);
             
-            return new(product.Id.ToString(), "Ürün başarılı şekilde sisteme eklenmiştir");
+            return new("", "Ürün başarılı şekilde sisteme eklenmiştir");
         }
     }
 }

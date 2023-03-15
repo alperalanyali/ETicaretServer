@@ -43,10 +43,10 @@ namespace Application.Features.AppEntities.OrderFeatures.Commands.CreateOrder
             await _orderItemService.AddRange(orderItems, cancellationToken);
 
             await _basketService.Delete(request.BasketId, cancellationToken);
-
+            var totalPrice = await _orderItemService.GetTotalPriceByOrderId(order.Id.ToString());
 
             var sellerInfo = await _ecommercePayment.GetFirstAsync();
-            var paymentDto = new PaymentAddressDto(sellerInfo.Name, sellerInfo.Surname, sellerInfo.GsmNumber, sellerInfo.Email, sellerInfo.IdentityNumber, sellerInfo.Ip, sellerInfo.City, sellerInfo.Country, sellerInfo.ZipCode, sellerInfo.UserId, request.CardHolderName, request.CardNumber, request.ExpireMonth, request.ExpireYear, request.CVV, 1000, "", "",sellerInfo.RegistrationAddress);
+            var paymentDto = new PaymentAddressDto(sellerInfo.Name, sellerInfo.Surname, sellerInfo.GsmNumber, sellerInfo.Email, sellerInfo.IdentityNumber, sellerInfo.Ip, sellerInfo.City, sellerInfo.Country, sellerInfo.ZipCode, sellerInfo.UserId, request.CardHolderName, request.CardNumber, request.ExpireMonth, request.ExpireYear, request.CVV,totalPrice, "asdfasdf", "adsfasfd",sellerInfo.RegistrationAddress);
 
             PaymentResult paymentResult = await _paymentService.PaymentWithIyzico(paymentDto);
 

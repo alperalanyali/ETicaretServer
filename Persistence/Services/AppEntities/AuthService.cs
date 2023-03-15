@@ -29,7 +29,9 @@ namespace Persistence.Services.AppEntities
                 UserName = request.Username,
                 Email = request.Email,
                 FullName = request.FullName,
-                //StoreId = new Guid(request.StoreId),
+                StoreId = request.StoreId == "" ? Guid.Empty :new Guid(request.StoreId),
+                ForgotPasswordCode = "",
+                MailConfirmCode = "",
                 RoleId = new Guid(request.RoleId),
                 RefreshToken = "112313"
 
@@ -40,7 +42,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task<AppUser> GetByEmailOrUsernameAsync(string emailOrUsername)
         {
-            var user = await _userManager.Users.Where(u => u.Email == emailOrUsername || u.UserName == emailOrUsername).FirstOrDefaultAsync();
+            var user = await _userManager.Users.Where(u => u.Email == emailOrUsername || u.UserName == emailOrUsername).Include(p => p.Role).FirstOrDefaultAsync();
             return user;
         }
 

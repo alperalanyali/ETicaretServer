@@ -1,4 +1,6 @@
 ﻿using System;
+using Domain.Entities.Identity;
+
 namespace Application.Features.AppEntities.AuthFeatures.Commands.Login
 {
 	public sealed record LoginCommandResponse(
@@ -7,7 +9,7 @@ namespace Application.Features.AppEntities.AuthFeatures.Commands.Login
 		string Email,
 		Guid UserId,
 		string FullName,
-		string RoleId,
+		AppRole Role,
 		string StoreId
 		);
 	

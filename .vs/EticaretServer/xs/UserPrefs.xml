@@ -1,22 +1,21 @@
 ﻿<Properties StartupConfiguration="{C42B0C7E-74A1-42B4-B8B0-D5E3D00187BD}|http">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" relfile="src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" line="18" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/Controllers/ProductStoreController.cs" relfile="src/EticaretWebApi/Controllers/ProductStoreController.cs" line="52" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/EmailFeatures/Commands/TesEmail/TestEmailCommandHandler.cs" relfile="src/Application/Features/AppEntities/EmailFeatures/Commands/TesEmail/TestEmailCommandHandler.cs" line="16" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/Persistence/Services/AppEntities/AuthService.cs" relfile="Persistence/Services/AppEntities/AuthService.cs" line="56" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/AuthFeatures/Commands/ForgotPassword/ForgotPasswordCommandHandler.cs" relfile="src/Application/Features/AppEntities/AuthFeatures/Commands/ForgotPassword/ForgotPasswordCommandHandler.cs" line="30" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" relfile="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" line="21" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Infrastructure/Services/EmailSenderService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Services/AppEntities/ProductStoreService.cs">
     <Files>
-      <File FileName="src/Application/Features/AppEntities/AuthFeatures/Commands/ForgotPassword/ForgotPasswordCommandHandler.cs" Line="45" Column="1" />
-      <File FileName="src/Infrastructure/Services/EmailSenderService.cs" Line="23" Column="1" />
+      <File FileName="Domain/Entities/ProductStore.cs" />
+      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Commands/CreateProductStore/CreateProductStoreCommandHandler.cs" />
+      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Commands/CreateProductStore/CreateProductStoreCommand.cs" />
+      <File FileName="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" />
+      <File FileName="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommand.cs" />
+      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Commands/UpdateProductStore/UpdateProductStoreCommandHandler.cs" />
+      <File FileName="src/EticaretWebApi/Controllers/ProductController.cs" />
+      <File FileName="Persistence/Services/AppEntities/ProductStoreService.cs" Line="15" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -27,43 +26,41 @@
                 <Node name="Application" expanded="True">
                   <Node name="Features" expanded="True">
                     <Node name="AppEntities" expanded="True">
-                      <Node name="AuthFeatures" expanded="True">
+                      <Node name="ProductCategoryFeatures" expanded="True">
                         <Node name="Commands" expanded="True">
-                          <Node name="ForgotPassword" expanded="True" />
-                          <Node name="RefreshPassword" expanded="True" />
+                          <Node name="UpdateProductCategory" expanded="True" />
                         </Node>
                       </Node>
-                      <Node name="ECommercePaymentFeatures" expanded="True">
+                      <Node name="ProductFeatures" expanded="True">
                         <Node name="Commands" expanded="True">
-                          <Node name="UpdateECommercePayment" expanded="True" />
+                          <Node name="CreateProduct" expanded="True" />
                         </Node>
                       </Node>
-                      <Node name="EmailFeatures" expanded="True">
+                      <Node name="ProductStoreFeatures" expanded="True">
                         <Node name="Commands" expanded="True">
-                          <Node name="TesEmail" expanded="True" />
+                          <Node name="CreateProductStore" expanded="True" />
+                          <Node name="UpdateProductStore" expanded="True" />
                         </Node>
                       </Node>
-                      <Node name="PaymentTypeFeatures" expanded="True" />
                     </Node>
                   </Node>
-                  <Node name="Services" expanded="True" />
                 </Node>
-                <Node name="Domain" expanded="True" />
+                <Node name="Domain" expanded="True">
+                  <Node name="Entities" expanded="True" />
+                </Node>
               </Node>
               <Node name="External" expanded="True">
-                <Node name="Infrastructure" expanded="True">
-                  <Node name="Services" expanded="True">
-                    <Node name="EmailSenderService.cs" selected="True" />
-                  </Node>
-                </Node>
+                <Node name="Infrastructure" expanded="True" />
                 <Node name="Persistence" expanded="True">
+                  <Node name="Context" expanded="True" />
                   <Node name="Services" expanded="True">
-                    <Node name="AppEntities" expanded="True" />
+                    <Node name="AppEntities" expanded="True">
+                      <Node name="ProductStoreService.cs" selected="True" />
+                    </Node>
                   </Node>
                 </Node>
               </Node>
               <Node name="EticaretWebApi" expanded="True">
-                <Node name="Configuration" expanded="True" />
                 <Node name="Controllers" expanded="True" />
               </Node>
               <Node name="OnlinePayment-Iyzico" expanded="True" />
@@ -74,4 +71,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
