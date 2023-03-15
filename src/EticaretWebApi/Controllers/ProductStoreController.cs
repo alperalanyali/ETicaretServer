@@ -30,7 +30,7 @@ namespace EticaretWebApi.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> Update(UpdateProductStoreCommand request,CancellationToken cancellationToken)
+        public async Task<IActionResult> Update([FromForm]UpdateProductStoreCommand request,CancellationToken cancellationToken)
         {
 
             var response = await _mediatR.Send(request,cancellationToken);

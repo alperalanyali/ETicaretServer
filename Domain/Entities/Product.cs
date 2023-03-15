@@ -35,7 +35,7 @@ namespace Domain.Entities
 
 		public decimal Price { get; set; }
 
-		public ICollection<ProductCategory> ProductCategories { get; set; }
+		//public ICollection<ProductCategory> ProductCategories { get; set; }
 
 	}
 }

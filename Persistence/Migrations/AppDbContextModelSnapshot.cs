@@ -505,9 +505,6 @@ namespace Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid?>("ProductId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("ProductStoreId")
                         .HasColumnType("uniqueidentifier");
 
@@ -517,8 +514,6 @@ namespace Persistence.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
-
-                    b.HasIndex("ProductId");
 
                     b.HasIndex("ProductStoreId");
 
@@ -545,6 +540,9 @@ namespace Persistence.Migrations
                     b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("InStock")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -734,10 +732,6 @@ namespace Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Entities.Product", null)
-                        .WithMany("ProductCategories")
-                        .HasForeignKey("ProductId");
-
                     b.HasOne("Domain.Entities.ProductStore", null)
                         .WithMany("ProductCategories")
                         .HasForeignKey("ProductStoreId")
@@ -779,11 +773,6 @@ namespace Persistence.Migrations
             modelBuilder.Entity("Domain.Entities.Order", b =>
                 {
                     b.Navigation("OrderItems");
-                });
-
-            modelBuilder.Entity("Domain.Entities.Product", b =>
-                {
-                    b.Navigation("ProductCategories");
                 });
 
             modelBuilder.Entity("Domain.Entities.ProductStore", b =>

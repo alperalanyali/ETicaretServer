@@ -138,6 +138,7 @@
     <None Remove="Features\AppEntities\UserFeatures\Commands\" />
     <None Remove="Features\AppEntities\UserFeatures\Queries\" />
     <None Remove="Features\AppEntities\UserFeatures\Queries\GetAllUser\" />
+    <None Remove="Features\AppEntities\StoreFeatures\Commands\DeleteStore\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -271,6 +272,7 @@
     <Folder Include="Features\AppEntities\UserFeatures\Commands\" />
     <Folder Include="Features\AppEntities\UserFeatures\Queries\" />
     <Folder Include="Features\AppEntities\UserFeatures\Queries\GetAllUser\" />
+    <Folder Include="Features\AppEntities\StoreFeatures\Commands\DeleteStore\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.0" />

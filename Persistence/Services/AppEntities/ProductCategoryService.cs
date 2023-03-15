@@ -33,7 +33,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<ProductCategory>> GetAllProductCategory(int pageNumber,int pageSize)
         {
-            var results = await _productCategoryQuery.GetAll().Include("Product").Include("Category").Take(pageSize).Skip(pageNumber - 1).ToListAsync();
+            var results = await _productCategoryQuery.GetAll().Include("Category").Take(pageSize).Skip(pageNumber - 1).ToListAsync();
             return results;
         }
 

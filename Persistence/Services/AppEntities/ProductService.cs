@@ -41,10 +41,7 @@ namespace Persistence.Services.AppEntities
         {
             var result =
                 _productQuery
-                .GetAll()                
-                .Include(p => p.ProductCategories)
-                .ThenInclude(p => p.Category)
-                .Include("QuantityType")
+                .GetAll()                                          
                 .Take(pageSize)
                 .Skip(pageNumber - 1)
                 ;
@@ -56,7 +53,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task<Product> GetById(string id)
         {
-            return await _productQuery.GetWhere(p => p.Id == new Guid(id)).Include(p =>p.ProductCategories).ThenInclude(p => p.Category).FirstOrDefaultAsync();
+            return await _productQuery.GetWhere(p => p.Id == new Guid(id))/*.Include(p =>p.ProductCategories).ThenInclude(p => p.Category)*/.FirstOrDefaultAsync();
         }
 
         public async Task<bool> CheckExistProductByCodeAndName(string code, string name)
@@ -72,8 +69,8 @@ namespace Persistence.Services.AppEntities
 
         public async Task<IList<Product>> GetProductsByCategoryId(string categoryId)
         {
-            var products = await _productQuery.GetWhere(p => p.ProductCategories.Any(x => x.Category.Id == new Guid(categoryId))).Include(p => p.ProductCategories).ThenInclude(p => p.Category).ToListAsync();
-
+            //var products = await _productQuery.GetWhere(p => p.ProductCategories.Any(x => x.Category.Id == new Guid(categoryId))).Include(p => p.ProductCategories).ThenInclude(p => p.Category).ToListAsync();
+            var products = new List<Product>();
             return products;
         }
 

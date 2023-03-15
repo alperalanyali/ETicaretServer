@@ -17,9 +17,11 @@ namespace Domain.Entities
             ProductStoreId = productStoreId;
 			CategoryId = categoryId;
 		}
-		//[ForeignKey("Product")]
+		//
+		//
+		//[ForeignKey("ProductStore")]
 		public Guid ProductStoreId { get; set; }
-		//public Product Product { get; set; }
+		//public ProductStore Product { get; set; }
 
 		[ForeignKey("Category")]
 		public Guid CategoryId { get; set; }

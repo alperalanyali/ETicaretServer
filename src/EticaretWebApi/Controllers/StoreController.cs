@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.AppEntities.StoreFeatures.Commands.CreateStore;
+using Application.Features.AppEntities.StoreFeatures.Commands.DeleteStore;
 using Application.Features.AppEntities.StoreFeatures.Commands.UpdateStore;
 using Application.Features.AppEntities.StoreFeatures.Queries.GetAll;
 using Azure.Core;
@@ -29,6 +30,15 @@ namespace EticaretWebApi.Controllers
         }
         [HttpPost("[action]")]
         public async Task<IActionResult> Update(UpdateStoreCommand request) {
+
+            var response = await _mediatR.Send(request);
+
+            return Ok(response);
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Delete(DeleteStoreCommand request)
+        {
 
             var response = await _mediatR.Send(request);
 

@@ -11,6 +11,7 @@ namespace Application.Services
         Task UpdateAsync(ProductStore productStore, CancellationToken cancellationToken);
         Task Delete(string id, CancellationToken cancellationToken);
         Task<IList<ProductStore>> GetProductStoresByCategoryId(string categoryId);
+        Task<IList<ProductStore>> GetProductStoresByStoreId(string storeId);
     }
 }
 

@@ -51,7 +51,7 @@ namespace Domain.Entities
 		public Store Store { get; set; }
 
 		public decimal Price { get; set; }
-        public int InStock;
+        public int InStock { get; set; }
 
 
 
