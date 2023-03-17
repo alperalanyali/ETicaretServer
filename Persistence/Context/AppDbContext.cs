@@ -64,6 +64,9 @@ namespace Persistence.Context
              .WithMany(p => p.Orders)
              .HasForeignKey(x => x.UserId)
              .OnDelete(DeleteBehavior.Restrict);
+            builder.Entity<Order>()
+                .Property(o => o.Status)
+                .HasConversion<string>();
 
         }
 

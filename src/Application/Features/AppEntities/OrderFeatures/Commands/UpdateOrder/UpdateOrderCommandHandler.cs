@@ -17,6 +17,7 @@ namespace Application.Features.AppEntities.OrderFeatures.Commands.UpdateOrder
             order.AddressId = request.AddressId;
             //order.BasketId = request.BasketId;
             order.PaymentTypeId = request.PaymentId;
+            order.Status = request.Status;
 
             await _orderService.Update(order, cancellationToken);
             return new();

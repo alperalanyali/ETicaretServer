@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using Domain.Abstractions;
 using Domain.Entities.Identity;
+using Domain.Enums;
 
 namespace Domain.Entities
 {
@@ -12,12 +13,13 @@ namespace Domain.Entities
 
 		}
 
-		public Order(Guid userId,Guid addressId,Guid paymentTypeId)
+		public Order(Guid userId,Guid addressId,Guid paymentTypeId,OrderStatus status)
 		{
 			Id = Guid.NewGuid();			
 			UserId = userId;
 			AddressId = addressId;
 			PaymentTypeId = paymentTypeId;
+			Status = status;
 
 		}
 		public List<OrderItem> OrderItems { get; set; }
@@ -32,6 +34,9 @@ namespace Domain.Entities
 		[ForeignKey("PaymentTypes")]
 		public Guid PaymentTypeId { get; set; }
 		public PaymentType PaymentType { get; set; }
+
+		public OrderStatus Status { get; set; }
+
 	}
 }
 

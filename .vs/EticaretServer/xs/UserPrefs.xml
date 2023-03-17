@@ -4,18 +4,19 @@
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" relfile="src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" line="18" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/EmailFeatures/Commands/TesEmail/TestEmailCommandHandler.cs" relfile="src/Application/Features/AppEntities/EmailFeatures/Commands/TesEmail/TestEmailCommandHandler.cs" line="16" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" relfile="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" line="21" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandHandler.cs" relfile="src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandHandler.cs" line="31" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/Controllers/OrderController.cs" relfile="src/EticaretWebApi/Controllers/OrderController.cs" line="29" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Services/AppEntities/ProductStoreService.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandHandler.cs">
     <Files>
-      <File FileName="Domain/Entities/ProductStore.cs" />
-      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Commands/CreateProductStore/CreateProductStoreCommandHandler.cs" />
-      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Commands/CreateProductStore/CreateProductStoreCommand.cs" />
-      <File FileName="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" />
-      <File FileName="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommand.cs" />
-      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Commands/UpdateProductStore/UpdateProductStoreCommandHandler.cs" />
-      <File FileName="src/EticaretWebApi/Controllers/ProductController.cs" />
-      <File FileName="Persistence/Services/AppEntities/ProductStoreService.cs" Line="15" Column="1" />
+      <File FileName="src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandHandler.cs" Line="31" Column="1" />
+      <File FileName="src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommand.cs" Line="18" Column="43" />
+      <File FileName="src/EticaretWebApi/Controllers/OrderController.cs" Line="24" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,20 +27,12 @@
                 <Node name="Application" expanded="True">
                   <Node name="Features" expanded="True">
                     <Node name="AppEntities" expanded="True">
-                      <Node name="ProductCategoryFeatures" expanded="True">
+                      <Node name="OrderFeatures" expanded="True">
                         <Node name="Commands" expanded="True">
-                          <Node name="UpdateProductCategory" expanded="True" />
-                        </Node>
-                      </Node>
-                      <Node name="ProductFeatures" expanded="True">
-                        <Node name="Commands" expanded="True">
-                          <Node name="CreateProduct" expanded="True" />
-                        </Node>
-                      </Node>
-                      <Node name="ProductStoreFeatures" expanded="True">
-                        <Node name="Commands" expanded="True">
-                          <Node name="CreateProductStore" expanded="True" />
-                          <Node name="UpdateProductStore" expanded="True" />
+                          <Node name="CreateOrder" expanded="True">
+                            <Node name="CreateOrderCommandHandler.cs" selected="True" />
+                          </Node>
+                          <Node name="UpdateOrder" expanded="True" />
                         </Node>
                       </Node>
                     </Node>
@@ -54,9 +47,7 @@
                 <Node name="Persistence" expanded="True">
                   <Node name="Context" expanded="True" />
                   <Node name="Services" expanded="True">
-                    <Node name="AppEntities" expanded="True">
-                      <Node name="ProductStoreService.cs" selected="True" />
-                    </Node>
+                    <Node name="AppEntities" expanded="True" />
                   </Node>
                 </Node>
               </Node>
@@ -65,15 +56,10 @@
               </Node>
               <Node name="OnlinePayment-Iyzico" expanded="True" />
             </Node>
-            <Node name="EticaretServer" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
