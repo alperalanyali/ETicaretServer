@@ -5,7 +5,8 @@ namespace Application.Features.AppEntities.ProductStoreFeatures.Queries.GetAllPr
 {
 	public sealed record GetAllProductStoreQuery(
 		int PagaNumber =1,
-		int PageSize = 10
+		int PageSize = 10,
+		string Search = ""
 		):IQuery<GetAllProductStoreQueryResponse>;
 	
 }

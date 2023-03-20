@@ -15,7 +15,7 @@ namespace Application.Features.AppEntities.ProductStoreFeatures.Queries.GetAllPr
 
         public async Task<GetAllProductStoreQueryResponse> Handle(GetAllProductStoreQuery request, CancellationToken cancellationToken)
         {
-            var results = await _productStoreService.GetAll();
+            var results = await _productStoreService.GetAll(request);
 
             return new(results.Count(), results);
         }

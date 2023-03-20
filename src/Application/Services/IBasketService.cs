@@ -11,6 +11,7 @@ namespace Application.Services
 		Task<IList<Basket>> GetAllBasket();
 		Task<Basket> GetById(string id);
 		Task<Basket> GetBasketIdByUserId(string userId);
+	
 	}
 }
 

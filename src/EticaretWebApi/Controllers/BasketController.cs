@@ -6,6 +6,7 @@ using Application.Features.AppEntities.BasketFeatures.Commands.CreateBasket;
 using Application.Features.AppEntities.BasketFeatures.Commands.DeleteBasket;
 using Application.Features.AppEntities.BasketFeatures.Commands.UpdateBasket;
 using Application.Features.AppEntities.BasketFeatures.Queries.GetBasketById;
+using Application.Features.AppEntities.BasketFeatures.Queries.GetBasketCountByUserId;
 using Application.Features.AppEntities.BasketFeatures.Queries.GetBasketIdByUserId;
 using EticaretWebApi.Abstractions;
 using MediatR;
@@ -50,6 +51,12 @@ namespace EticaretWebApi.Controllers
         {
             var response = await _mediatR.Send(request);
 
+            return Ok(response);
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetBasketCountByUserId(GetBasketCountByUserIdQuery request)
+        {
+            var response = await _mediatR.Send(request);
             return Ok(response);
         }
     }

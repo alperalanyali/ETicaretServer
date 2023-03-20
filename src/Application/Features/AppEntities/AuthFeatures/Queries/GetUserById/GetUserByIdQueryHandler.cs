@@ -2,6 +2,7 @@
 using Application.Messaging;
 using Domain.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace Application.Features.AppEntities.AuthFeatures.Queries.GetUserById
 {
@@ -15,7 +16,7 @@ namespace Application.Features.AppEntities.AuthFeatures.Queries.GetUserById
 
         public async Task<GetUserByIdQueryResponse> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
         {
-            var user = await _userManager.FindByIdAsync(request.UserId);
+            var user = await _userManager.Users.Where(p => p.Id == new Guid(request.UserId)).Include(p => p.Role).FirstOrDefaultAsync();
 
             return new(user);
         }

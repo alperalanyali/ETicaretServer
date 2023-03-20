@@ -1,22 +1,21 @@
 ﻿<Properties StartupConfiguration="{C42B0C7E-74A1-42B4-B8B0-D5E3D00187BD}|http">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" relfile="src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" line="18" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/EmailFeatures/Commands/TesEmail/TestEmailCommandHandler.cs" relfile="src/Application/Features/AppEntities/EmailFeatures/Commands/TesEmail/TestEmailCommandHandler.cs" line="16" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" relfile="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" line="21" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandHandler.cs" relfile="src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandHandler.cs" line="31" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/EticaretWebApi/Controllers/OrderController.cs" relfile="src/EticaretWebApi/Controllers/OrderController.cs" line="29" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/OrderFeatures/Queries/GetAllOrders/GetAllOrdersQueryHandler.cs" relfile="src/Application/Features/AppEntities/OrderFeatures/Queries/GetAllOrders/GetAllOrdersQueryHandler.cs" line="18" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Persistence/Services/AppEntities/ProductStoreService.cs">
     <Files>
-      <File FileName="src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandHandler.cs" Line="31" Column="1" />
-      <File FileName="src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommand.cs" Line="18" Column="43" />
-      <File FileName="src/EticaretWebApi/Controllers/OrderController.cs" Line="24" Column="10" />
+      <File FileName="src/Application/Features/AppEntities/OrderFeatures/Queries/GetAllOrders/GetAllOrdersQuery.cs" Line="1" Column="1" />
+      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Queries/GetAllProductStore/GetAllProductStoreQueryHandler.cs" Line="18" Column="68" />
+      <File FileName="Persistence/Services/AppEntities/ProductStoreService.cs" Line="39" Column="327" />
+      <File FileName="src/Application/Services/IProductStore.cs" Line="9" Column="73" />
+      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Queries/GetAllProductStore/GetAllProductStoreQuery.cs" Line="9" Column="21" />
+      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Queries/GetAllProductStore/GetAllProductStoreQueryResponse.cs" Line="7" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -27,19 +26,18 @@
                 <Node name="Application" expanded="True">
                   <Node name="Features" expanded="True">
                     <Node name="AppEntities" expanded="True">
-                      <Node name="OrderFeatures" expanded="True">
-                        <Node name="Commands" expanded="True">
-                          <Node name="CreateOrder" expanded="True">
-                            <Node name="CreateOrderCommandHandler.cs" selected="True" />
-                          </Node>
-                          <Node name="UpdateOrder" expanded="True" />
+                      <Node name="ProductStoreFeatures" expanded="True">
+                        <Node name="Queries" expanded="True">
+                          <Node name="GetAllProductStore" expanded="True" />
                         </Node>
                       </Node>
                     </Node>
                   </Node>
+                  <Node name="Services" expanded="True" />
                 </Node>
                 <Node name="Domain" expanded="True">
                   <Node name="Entities" expanded="True" />
+                  <Node name="Enums" expanded="True" />
                 </Node>
               </Node>
               <Node name="External" expanded="True">
@@ -47,7 +45,9 @@
                 <Node name="Persistence" expanded="True">
                   <Node name="Context" expanded="True" />
                   <Node name="Services" expanded="True">
-                    <Node name="AppEntities" expanded="True" />
+                    <Node name="AppEntities" expanded="True">
+                      <Node name="ProductStoreService.cs" selected="True" />
+                    </Node>
                   </Node>
                 </Node>
               </Node>
@@ -62,4 +62,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
 </Properties>

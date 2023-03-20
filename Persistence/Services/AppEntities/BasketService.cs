@@ -36,6 +36,8 @@ namespace Persistence.Services.AppEntities
             return await _basketQuery.GetAll().ToListAsync();
         }
 
+   
+
         public async Task<Basket> GetBasketIdByUserId(string userId)
         {
             var result = _basketQuery.GetWhere(p => p.UserId == new Guid(userId)).Include(p => p.BasketItems).ThenInclude(b => b.ProductStore).ThenInclude(p => p.QuantityType).OrderByDescending(p => p.CreatedDate).FirstOrDefaultAsync();

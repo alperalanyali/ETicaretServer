@@ -1,4 +1,5 @@
 ﻿using System;
+using Application.Features.AppEntities.ProductStoreFeatures.Queries.GetAllProductStore;
 using Application.Services;
 using Domain.Entities;
 using Domain.Repositories.AppEntities.ProductStoreRepository;
@@ -33,9 +34,9 @@ namespace Persistence.Services.AppEntities
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task<IList<ProductStore>> GetAll()
+        public async Task<IList<ProductStore>> GetAll(GetAllProductStoreQuery request)
         {
-            var results = await _query.GetAll().Include(p => p.Store).Include(p => p.QuantityType).Include(p=> p.ProductCategories).ThenInclude(p => p.Category).ToListAsync();
+            var results = await _query.GetWhere(p => p.Name.ToLower().Contains(request.Search.ToLower()) || p.Description.ToLower().Contains(request.Search.ToLower()) || p.Store.StoreName.ToLower().Contains(request.Search.ToLower()) || p.ProductCategories.Any(pc => pc.Category.Name.ToLower().Contains(request.Search.ToLower()))).Include(p => p.Store).Include(p => p.QuantityType).Include(p=> p.ProductCategories).ThenInclude(p => p.Category).Skip((request.PagaNumber - 1)*request.PagaNumber).Take(request.PageSize).ToListAsync();
 
             return results;
         }
