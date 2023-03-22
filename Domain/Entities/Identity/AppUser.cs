@@ -15,7 +15,7 @@ namespace Domain.Entities.Identity
 
 		//[ForeignKey("Store")]
 		public Guid? StoreId { get; set; }
-		//public Store Store { get; set; }
+		//public Store? Store { get; set; }
 
 		public string MailConfirmCode { get; set; }
 		public bool IsMailConfirmed { get; set; }

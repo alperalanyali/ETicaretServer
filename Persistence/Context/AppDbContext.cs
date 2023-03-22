@@ -59,6 +59,7 @@ namespace Persistence.Context
             //    .WithMany(p => p.Orders)
             //    .HasForeignKey(x => x.BasketId)
             //    .OnDelete(DeleteBehavior.Restrict);
+
             builder.Entity<Order>()
              .HasOne(p => p.User)
              .WithMany(p => p.Orders)

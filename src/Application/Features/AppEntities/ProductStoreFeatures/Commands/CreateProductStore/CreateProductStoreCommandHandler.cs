@@ -29,7 +29,7 @@ namespace Application.Features.AppEntities.ProductStoreFeatures.Commands.CreateP
 
             await _productStore.CreateAsync(productStore, cancellationToken);
 
-            return new();
+            return new(productStore.Id.ToString());
         }
     }
 }

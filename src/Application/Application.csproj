@@ -140,6 +140,7 @@
     <None Remove="Features\AppEntities\UserFeatures\Queries\GetAllUser\" />
     <None Remove="Features\AppEntities\StoreFeatures\Commands\DeleteStore\" />
     <None Remove="Features\AppEntities\BasketFeatures\Queries\GetBasketCountByUserId\" />
+    <None Remove="Features\AppEntities\AuthFeatures\Commands\UpdateUser\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -275,6 +276,7 @@
     <Folder Include="Features\AppEntities\UserFeatures\Queries\GetAllUser\" />
     <Folder Include="Features\AppEntities\StoreFeatures\Commands\DeleteStore\" />
     <Folder Include="Features\AppEntities\BasketFeatures\Queries\GetBasketCountByUserId\" />
+    <Folder Include="Features\AppEntities\AuthFeatures\Commands\UpdateUser\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.0" />

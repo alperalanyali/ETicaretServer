@@ -1,5 +1,6 @@
 ﻿using System;
 using Domain.Abstractions;
+using Domain.Entities.Identity;
 
 namespace Domain.Entities
 {
@@ -21,8 +22,7 @@ namespace Domain.Entities
 
 		public string StoreName { get; set; }
 		public string Address { get; set; }
-
-		
+	
 
 	}
 }

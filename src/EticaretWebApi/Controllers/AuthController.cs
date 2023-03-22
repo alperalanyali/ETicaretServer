@@ -8,6 +8,7 @@ using Application.Features.AppEntities.AuthFeatures.Commands.Login;
 using Application.Features.AppEntities.AuthFeatures.Commands.MailConfirm;
 using Application.Features.AppEntities.AuthFeatures.Commands.MailConfirmEmail;
 using Application.Features.AppEntities.AuthFeatures.Commands.RefreshPassword;
+using Application.Features.AppEntities.AuthFeatures.Commands.UpdateUser;
 using Application.Features.AppEntities.AuthFeatures.Queries.GetUserById;
 using EticaretWebApi.Abstractions;
 using MediatR;
@@ -75,7 +76,12 @@ namespace EticaretWebApi.Controllers
             return Ok(response);
         }
 
-
+        [HttpPost("[action]")]
+        public async Task<IActionResult> UpdateUser(UpdateUserCommand request)
+        {
+            var response = await _mediatR.Send(request);
+            return Ok(response);
+        }
     }
 }
 
