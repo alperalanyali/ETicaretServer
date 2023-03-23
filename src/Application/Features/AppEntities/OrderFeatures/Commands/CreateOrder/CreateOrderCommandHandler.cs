@@ -48,10 +48,10 @@ namespace Application.Features.AppEntities.OrderFeatures.Commands.CreateOrder
             var sellerInfo = await _ecommercePayment.GetFirstAsync();
             var paymentDto = new PaymentAddressDto(sellerInfo.Name, sellerInfo.Surname, sellerInfo.GsmNumber, sellerInfo.Email, sellerInfo.IdentityNumber, sellerInfo.Ip, sellerInfo.City, sellerInfo.Country, sellerInfo.ZipCode, sellerInfo.UserId, request.CardHolderName, request.CardNumber, request.ExpireMonth, request.ExpireYear, request.CVV,totalPrice, "asdfasdf", "adsfasfd",sellerInfo.RegistrationAddress);
 
-            PaymentResult paymentResult = await _paymentService.PaymentWithIyzico(paymentDto);
+            //PaymentResult paymentResult = await _paymentService.PaymentWithIyzico(paymentDto);
 
 
-            return new(paymentResult);
+            return new();
         }
     }
 }

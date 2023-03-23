@@ -10,7 +10,7 @@ namespace Application.Services
 		Task Delete(string id,CancellationToken cancellationToken);
 		Task<IList<BasketItem>> GetAllBasketItem();
 		Task<IList<BasketItem>> GetBasketItemByBasketId(string basketId);
-		Task<BasketItem> GetById(string id);
+		Task<BasketItem> GetById(string id,bool isTracking=false);
 		Task DeleteBasketItemByBasketId(IList<BasketItem> basketItems,CancellationToken cancellationToken);
 
 	}

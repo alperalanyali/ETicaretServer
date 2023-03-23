@@ -11,16 +11,13 @@ namespace Persistence.Repositories.GenericRepositories.AppDbContext
     {
         private Context.AppDbContext _context;
 
-        //private static readonly Func<Context.AppDbContext, string, bool, Task<T>> GetByIdCompiled =
-        //    EF.CompileAsyncQuery((Context.AppDbContext context, string id, bool isTracking) =>
-        //    isTracking == true ? context.Set<T>().FirstOrDefault(p => p.Id == id) : context.Set<T>().AsNoTracking().FirstOrDefault(p => p.Id == id));
+        private static readonly Func<Context.AppDbContext, string, bool, Task<T>> GetByIdCompiled =
+            EF.CompileAsyncQuery((Context.AppDbContext context, string id, bool isTracking) =>
+            isTracking == true ? context.Set<T>().FirstOrDefault(p => p.Id.ToString() == id) : context.Set<T>().AsNoTracking().FirstOrDefault(p => p.Id.ToString() == id));
 
-        //    private static readonly Func<Context.AppDbContext, string, bool, Task<T>> GetByIdCompiled =
-        //EF.CompileAsyncQuery((Context.AppDbContext context, string id, bool isTracking) =>
-        //isTracking == true ? context.Set<T>().FirstOrDefault(p => p.Id == id) : context.Set<T>().AsNoTracking().FirstOrDefault(p => p.Id == id));
-        private static readonly Func<Context.AppDbContext, string, Task<T>> GetByIdCompiled =
-            EF.CompileAsyncQuery((Context.AppDbContext context, string id) =>
-                context.Set<T>().AsNoTracking().FirstOrDefault(p => p.Id.ToString() == id));
+        //private static readonly Func<Context.AppDbContext, string, Task<T>> GetByIdCompiled =
+        //    EF.CompileAsyncQuery((Context.AppDbContext context, string id) =>
+        //        context.Set<T>().AsNoTracking().FirstOrDefault(p => p.Id.ToString() == id));
 
         private static readonly Func<Context.AppDbContext, Task<T>> GetFirstCompiled =
            EF.CompileAsyncQuery((Context.AppDbContext context) =>
@@ -42,9 +39,19 @@ namespace Persistence.Repositories.GenericRepositories.AppDbContext
             return result;
         }
 
-        public async Task<T> GetById(string id, bool isTracking = true)
+        public async Task<T> GetById(string id, bool isTracking)
         {
-            return await GetByIdCompiled(_context, id);
+            T entity = null;
+            if (isTracking)
+            {
+
+                entity = await Entity.Where(p => p.Id.ToString() == id).FirstOrDefaultAsync();
+        
+            }else
+            {
+                entity = await Entity.AsNoTracking().Where(p => p.Id.ToString() == id).FirstOrDefaultAsync();
+            }
+            return entity;
         }
 
         public async Task<T> GetFirst(bool isTracking = true)

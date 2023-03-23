@@ -50,9 +50,9 @@ namespace Persistence.Services.AppEntities
             return await _basketItemQuery.GetWhere(p => p.BasketId == new Guid(basketId)).Include(p => p.ProductStore)/*.ThenInclude(p => p.Product)*/.ToListAsync();
         }
 
-        public async Task<BasketItem> GetById(string id)
+        public async Task<BasketItem> GetById(string id,bool isTracking= false)
         {
-            return await _basketItemQuery.GetById(id, false);
+            return await _basketItemQuery.GetById(id, isTracking);
         }
 
         public async Task Update(BasketItem basketItem, CancellationToken cancellationToken)
