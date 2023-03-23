@@ -14,7 +14,12 @@ namespace Application.Features.AppEntities.BasketFeatures.Queries.GetBasketIdByU
         public async Task<GetBasketIdByUserIdQueryResponse> Handle(GetBasketIdByUserIdQuery request, CancellationToken cancellationToken)
         {
             var basket = await _basketService.GetBasketIdByUserId(request.UserId);
-
+            decimal amount = 0;
+            foreach (var basketItem in basket.BasketItems)
+            {
+                amount += basketItem.TotalPrice;
+            }
+            basket.TotalAmount = amount;
             return new(true,1,basket);
         }
     }

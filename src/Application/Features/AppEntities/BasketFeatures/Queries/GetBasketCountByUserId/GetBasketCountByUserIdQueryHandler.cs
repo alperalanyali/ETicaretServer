@@ -17,6 +17,7 @@ namespace Application.Features.AppEntities.BasketFeatures.Queries.GetBasketCount
         public async Task<GetBasketCountByUserIdQueryResponse> Handle(GetBasketCountByUserIdQuery request, CancellationToken cancellationToken)
         {
             var basket = await _basketService.GetBasketIdByUserId(request.UserId);
+       
             
             return new(basket.BasketItems.Count());
         }
