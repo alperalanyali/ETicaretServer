@@ -6,7 +6,7 @@ namespace Application.Features.AppEntities.BasketItemFeatures.Commands.CreateBas
 	public sealed record CreateBasketItemCommand(
 			Guid BasketId,
 			Guid ProductStoreId,
-			decimal Quantity,
+			int Quantity,
 			decimal TotalPrice
 		):ICommand<CreateBasketItemCommandResponse>;
 

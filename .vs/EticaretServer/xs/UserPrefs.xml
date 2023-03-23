@@ -1,9 +1,26 @@
 ﻿<Properties StartupConfiguration="{C42B0C7E-74A1-42B4-B8B0-D5E3D00187BD}|http">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/EticaretWebApi/Program.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" relfile="src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" line="18" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/EmailFeatures/Commands/TesEmail/TestEmailCommandHandler.cs" relfile="src/Application/Features/AppEntities/EmailFeatures/Commands/TesEmail/TestEmailCommandHandler.cs" line="16" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" relfile="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" line="21" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/OrderFeatures/Queries/GetAllOrders/GetAllOrdersQueryHandler.cs" relfile="src/Application/Features/AppEntities/OrderFeatures/Queries/GetAllOrders/GetAllOrdersQueryHandler.cs" line="18" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/AddressFeatures/Commands/CreateAddress/CreateAddressCommandHandler.cs" relfile="src/Application/Features/AppEntities/AddressFeatures/Commands/CreateAddress/CreateAddressCommandHandler.cs" line="18" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/AuthFeatures/Commands/CreateUser/CreateUserCommandHandler.cs" relfile="src/Application/Features/AppEntities/AuthFeatures/Commands/CreateUser/CreateUserCommandHandler.cs" line="17" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/ProductStoreFeatures/Commands/DeleteProductStore/DeleteProductStoreCommandHandler.cs" relfile="src/Application/Features/AppEntities/ProductStoreFeatures/Commands/DeleteProductStore/DeleteProductStoreCommandHandler.cs" line="17" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Application/Features/AppEntities/ProductStoreFeatures/Commands/DeleteProductStore/DeleteProductStoreCommandHandler.cs">
     <Files>
-      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Commands/CreateProductStore/CreateProductStoreCommandHandler.cs" Line="32" Column="1" />
-      <File FileName="src/EticaretWebApi/Program.cs" Line="32" Column="1" />
+      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Commands/CreateProductStore/CreateProductStoreCommandHandler.cs" />
+      <File FileName="src/EticaretWebApi/Program.cs" Line="34" Column="1" />
+      <File FileName="src/Application/Features/AppEntities/ProductCategoryFeatures/Queries/GetProductCategoriesByProductId/GetProductCategoriesByProductIdQueryHandler.cs" Line="19" Column="1" />
+      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Commands/DeleteProductStore/DeleteProductStoreCommandHandler.cs" Line="21" Column="1" />
+      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Commands/DeleteProductStore/DeleteProductStoreCommand.cs" Line="1" Column="1" />
+      <File FileName="src/Application/Features/AppEntities/ProductStoreFeatures/Commands/DeleteProductStore/DeleteProductStoreCommandResponse.cs" Line="1" Column="1" />
+      <File FileName="Persistence/Services/AppEntities/ProductStoreService.cs" Line="35" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,17 +31,11 @@
                 <Node name="Application" expanded="True">
                   <Node name="Features" expanded="True">
                     <Node name="AppEntities" expanded="True">
-                      <Node name="ProductCategoryFeatures" expanded="True">
-                        <Node name="Commands" expanded="True">
-                          <Node name="CreateProductCategory" expanded="True" />
-                        </Node>
-                        <Node name="Queries" expanded="True">
-                          <Node name="GetProductCategoriesByProductId" expanded="True" />
-                        </Node>
-                      </Node>
                       <Node name="ProductStoreFeatures" expanded="True">
                         <Node name="Commands" expanded="True">
-                          <Node name="CreateProductStore" expanded="True" />
+                          <Node name="DeleteProductStore" expanded="True">
+                            <Node name="DeleteProductStoreCommandHandler.cs" selected="True" />
+                          </Node>
                         </Node>
                       </Node>
                     </Node>
@@ -47,7 +58,6 @@
               </Node>
               <Node name="EticaretWebApi" expanded="True">
                 <Node name="Controllers" expanded="True" />
-                <Node name="Program.cs" selected="True" />
               </Node>
               <Node name="OnlinePayment-Iyzico" expanded="True" />
             </Node>
@@ -56,19 +66,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" relfile="src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" line="18" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/EmailFeatures/Commands/TesEmail/TestEmailCommandHandler.cs" relfile="src/Application/Features/AppEntities/EmailFeatures/Commands/TesEmail/TestEmailCommandHandler.cs" line="16" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" relfile="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" line="21" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/OrderFeatures/Queries/GetAllOrders/GetAllOrdersQueryHandler.cs" relfile="src/Application/Features/AppEntities/OrderFeatures/Queries/GetAllOrders/GetAllOrdersQueryHandler.cs" line="18" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/AddressFeatures/Commands/CreateAddress/CreateAddressCommandHandler.cs" relfile="src/Application/Features/AppEntities/AddressFeatures/Commands/CreateAddress/CreateAddressCommandHandler.cs" line="18" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/AuthFeatures/Commands/CreateUser/CreateUserCommandHandler.cs" relfile="src/Application/Features/AppEntities/AuthFeatures/Commands/CreateUser/CreateUserCommandHandler.cs" line="17" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/ProductCategoryFeatures/Queries/GetProductCategoriesByProductId/GetProductCategoriesByProductIdQueryHandler.cs" relfile="src/Application/Features/AppEntities/ProductCategoryFeatures/Queries/GetProductCategoriesByProductId/GetProductCategoriesByProductIdQueryHandler.cs" line="18" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

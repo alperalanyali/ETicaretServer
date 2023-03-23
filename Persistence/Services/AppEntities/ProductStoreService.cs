@@ -30,7 +30,7 @@ namespace Persistence.Services.AppEntities
 
         public async Task Delete(string id, CancellationToken cancellationToken)
         {
-            _command.RemoveById(id);
+            await _command.RemoveById(id);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
 

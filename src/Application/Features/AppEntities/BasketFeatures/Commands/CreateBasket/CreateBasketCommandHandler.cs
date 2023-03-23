@@ -7,7 +7,7 @@ namespace Application.Features.AppEntities.BasketFeatures.Commands.CreateBasket
 {
 	public class CreateBasketCommandHandler:ICommandHandler<CreateBasketCommand,CreateBasketCommandResponse>
 	{
-        private readonly IBasketService _basketService;
+        private readonly IBasketService _basketService;        
 
         public CreateBasketCommandHandler(IBasketService basketService)
         {
@@ -19,6 +19,7 @@ namespace Application.Features.AppEntities.BasketFeatures.Commands.CreateBasket
             var basket = new Basket(userId: request.UserId, totalAmount: request.TotalAmount);
 
            await _basketService.CreateBasket(basket, cancellationToken);
+
             var response = new CreateBasketCommandResponse("Basket başarılı şekilde olusturuldu.");
 
             return response;
