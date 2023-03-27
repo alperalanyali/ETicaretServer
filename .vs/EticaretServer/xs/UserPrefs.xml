@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{C42B0C7E-74A1-42B4-B8B0-D5E3D00187BD}|http">
-  <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandHandler.cs">
     <Files>
-      <File FileName="src/Application/Features/AppEntities/BasketFeatures/Commands/CreateBasket/CreateBasketCommandHandler.cs" Line="63" Column="1" />
-      <File FileName="src/Application/Services/IBasketItemService.cs" Line="13" Column="59" />
-      <File FileName="src/Application/Features/AppEntities/BasketFeatures/Commands/CreateBasket/CreateBasketCommandResponse.cs" Line="5" Column="19" />
-      <File FileName="Persistence/Services/AppEntities/BasketItemService.cs" Line="54" Column="1" />
-      <File FileName="Persistence/Repositories/GenericRepositories/AppDbContext/AppQueryRepository.cs" Line="44" Column="1" />
-      <File FileName="src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandHandler.cs" Line="51" Column="12" />
-      <File FileName="src/OnlinePayment-Iyzico/Services/PaymenyService.cs" Line="92" Column="14" />
+      <File FileName="src/Application/Features/AppEntities/BasketFeatures/Commands/CreateBasket/CreateBasketCommandHandler.cs" />
+      <File FileName="src/Application/Services/IBasketItemService.cs" />
+      <File FileName="src/Application/Features/AppEntities/BasketFeatures/Commands/CreateBasket/CreateBasketCommandResponse.cs" />
+      <File FileName="Persistence/Services/AppEntities/BasketItemService.cs" />
+      <File FileName="Persistence/Repositories/GenericRepositories/AppDbContext/AppQueryRepository.cs" />
+      <File FileName="src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandHandler.cs" Line="31" Column="1" />
+      <File FileName="src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandResponse.cs" />
+      <File FileName="src/EticaretWebApi/Program.cs" Line="16" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -67,10 +67,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" relfile="src/Application/Features/AppEntities/BasketItemFeatures/Commands/DeleteBasketItemByBasketId/DeleteBasketItemByBasketIdCommandHandler.cs" line="18" column="1" />
@@ -78,8 +74,12 @@
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" relfile="src/Application/Features/AppEntities/ProductFeatures/Commands/CreateProduct/CreateProductCommandHandler.cs" line="21" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/OrderFeatures/Queries/GetAllOrders/GetAllOrdersQueryHandler.cs" relfile="src/Application/Features/AppEntities/OrderFeatures/Queries/GetAllOrders/GetAllOrdersQueryHandler.cs" line="18" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/AuthFeatures/Commands/CreateUser/CreateUserCommandHandler.cs" relfile="src/Application/Features/AppEntities/AuthFeatures/Commands/CreateUser/CreateUserCommandHandler.cs" line="17" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandHandler.cs" relfile="src/Application/Features/AppEntities/OrderFeatures/Commands/CreateOrder/CreateOrderCommandHandler.cs" line="45" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/ETicaret/EticaretServer/src/OnlinePayment-Iyzico/Services/PaymenyService.cs" relfile="src/OnlinePayment-Iyzico/Services/PaymenyService.cs" line="100" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EticaretServer PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.src.EticaretWebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
 </Properties>
